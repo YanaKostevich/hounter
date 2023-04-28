@@ -1,0 +1,124 @@
+@import "variables";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .main-navigation ul ul a {
+        width: 170px;
+    }
+    #site-branding {
+        display: flex;
+        align-items: center;
+        p {
+            font: normal 700 16px/20px "Lexend", sans-serif;
+            padding-left: 12px;
+            text-transform: capitalize;
+            color: $main-color;
+        }
+    }
+    #site-navigation {
+        width: auto;
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            li {
+                transition: 0.5s;
+                a {
+                    font: $menu;
+                    color: #f0f3fd;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 32px;
+                    padding: 8px 16px;
+                }
+                :hover {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+            :hover .sub-menu {
+                background-color: #d1fae5;
+                color: #047857;
+                border-radius: 0 5px 5px 5px;
+                transform: none;
+                transition: 0.5s;
+            }
+            :hover .sub-menu li {
+                transform: none;
+            }
+            :hover .sub-menu a {
+                color: #047857;
+                transform: none;
+            }
+
+            #menu-item-10:hover > a {
+                background-color: #d1fae5;
+                border-radius: 5px 5px 0 0;
+                color: #047857;
+                transform: none;
+                transition: 0.2s;
+            }
+            .sub-menu a:hover {
+                padding-left: 25px;
+                transition: all 0.3s ease;
+                color: $main-color;
+            }
+            #menu-item-10 {
+                a {
+                    position: relative;
+                    padding-right: 44px;
+                    transition: 0.2s;
+                    &:after {
+                        content: url("../svg/vector.svg");
+                        display: inline-block;
+                        position: absolute;
+                        right: 14.37px;
+                    }
+                }
+
+                .sub-menu {
+                    width: auto;
+                    box-shadow: none;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    transition: 0.5s;
+                    padding: 10px 0;
+                    li {
+                        margin: 0;
+                        border: none;
+                        border-radius: none;
+                        a {
+                            border: none;
+                            background-color: transparent;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .menu_button {
+                background-color: #d1fae5;
+                border-radius: 32px;
+                margin-left: 56px;
+                a {
+                    font: $menu;
+                    color: #047857;
+                    padding: 12px 24px;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: #047857;
+                        color: #f0f3fd;
+                        transition: 0.3s;
+                    }
+                }
+            }
+            :nth-child(2) {
+                margin: 0 24px;
+            }
+        }
+    }
+}

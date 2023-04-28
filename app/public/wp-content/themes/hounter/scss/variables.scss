@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$body-color: rgba(255, 255, 255, 1);
+$button-background: #10b981;
+$main-color: #1b1c57;
+$subtitle-color: #626687;
+$yellow: #f59e0b;
+
+//for search
+$background-color: #2a2e37;
+$search-bg-color: #242628;
+$icon-color: #00fede;
+$transition: all 0.5s ease;
+
+// $hero-title-font: normal 600 40px/50px 'Lexend', sans-serif;
+// $title-font: normal 600 32px/40px 'Lexend', sans-serif;
+// $subtitle-font: normal 400 16px/28px 'Lexend', sans-serif;
+$menu: normal 400 14px/18px "Lexend", sans-serif;
+
+h1 {
+  font: normal 600 40px/50px "Lexend", sans-serif;
+  color: $main-color;
+  text-transform: capitalize;
+}
+h2 {
+  color: $main-color;
+  font: normal 600 32px/40px "Lexend", sans-serif;
+}
+h3 {
+  font: normal 400 16px/28px "Lexend", sans-serif;
+  color: $subtitle-color;
+}
+h4 {
+  color: #888b97;
+  font: normal 400 16px/32px "Lexend", sans-serif;
+}

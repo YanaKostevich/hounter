@@ -140,6 +140,9 @@ add_action( 'widgets_init', 'hounter_widgets_init' );
 function hounter_scripts() {
 	wp_enqueue_style( 'hounter-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'hounter-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/style.css');
+	wp_enqueue_style( 'main-header', get_template_directory_uri() . '/css/header.css');
+	wp_enqueue_style( 'main-footer', get_template_directory_uri() . '/css/footer.css');
 
 	wp_enqueue_script( 'hounter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -149,6 +152,10 @@ function hounter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'hounter_scripts' );
 
+add_action( 'wp_enqueue_scripts', 'custom_scripts' );
+function custom_scripts() {
+  wp_enqueue_style('bootstrap-min', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', array(), null);
+}
 /**
  * Implement the Custom Header feature.
  */
