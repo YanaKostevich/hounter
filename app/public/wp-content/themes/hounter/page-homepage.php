@@ -38,7 +38,7 @@ get_header();
 			<div class="slider-right-content">
 				<div class="text-center my-3">
 					<div class="row mx-auto my-auto justify-content-center">
-						<div id="recipeCarousel" class="carousel slide" data-bs-ride="" data-bs-interval="3000"> <!-- carousel -->
+						<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- carousel -->
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<div class="col-md-3">
@@ -50,7 +50,7 @@ get_header();
 													<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 												<?php endif; ?>
 											</div>
-											<div class="card-img-overlay">
+											<div class="card-img">
 												<h5>
 													<?php the_field('people_title_for_info_slider'); ?>
 												</h5>
@@ -71,7 +71,7 @@ get_header();
 													<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 												<?php endif; ?>
 											</div>
-											<div class="card-img-overlay">
+											<div class="card-img">
 												<h5>
 													<?php the_field('house_title_for_info_slider'); ?>
 												</h5>
@@ -92,7 +92,7 @@ get_header();
 													<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 												<?php endif; ?>
 											</div>
-											<div class="card-img-overlay">
+											<div class="card-img">
 												<h5>
 													<?php the_field('clients_title_for_info_slider'); ?>
 												</h5>
@@ -113,7 +113,7 @@ get_header();
 													<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 												<?php endif; ?>
 											</div>
-											<div class="card-img-overlay">
+											<div class="card-img">
 												<h5>
 													<?php the_field('house_title_for_info_slider'); ?>
 												</h5>
