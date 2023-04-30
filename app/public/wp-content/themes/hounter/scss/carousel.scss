@@ -1,0 +1,76 @@
+@import "variables";
+.slider-right-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    .text-center.my-3 {
+        position: absolute;
+        right: 0;
+        top: 400px;
+        width: 47.3%;
+        .carousel-item {
+            width: auto;
+            .col-md-3 {
+                .card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 24px;
+                    border-radius: 32px;
+                    .card-img-overlay {
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        text-align: left;
+                        padding: 0 0 0 16px;
+                        h5 {
+                            margin-bottom: 2px;
+                        }
+                    }
+                    .card-img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+div#recipeCarousel {
+    padding-right: 0;
+}
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(0);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(0);
+    }
+    .col-md-3 {
+        width: auto;
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}

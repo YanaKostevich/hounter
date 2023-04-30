@@ -17,12 +17,9 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -32,6 +29,7 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'hounter'); ?></a>
 
 		<header id="masthead" class="site-header">
+			<div class="header-blur"></div>
 			<div id="site-branding">
 				<?php the_custom_logo() ?>
 				<p><?php echo wp_get_document_title(); ?></p>

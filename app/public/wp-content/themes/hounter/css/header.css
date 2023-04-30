@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
 h1 {
-  font: normal 600 40px/50px 'Lexend', sans-serif;
-  color: #1B1C57;
+  font: normal 600 40px/50px "Lexend", sans-serif;
+  color: #1b1c57;
   text-transform: capitalize;
 }
 
 h2 {
-  color: #1B1C57;
-  font: normal 600 32px/40px 'Lexend', sans-serif;
+  color: #1b1c57;
+  font: normal 600 32px/40px "Lexend", sans-serif;
 }
 
 h3 {
-  font: normal 400 16px/28px 'Lexend', sans-serif;
+  font: normal 400 16px/28px "Lexend", sans-serif;
   color: #626687;
 }
 
 h4 {
-  color: #888B97;
-  font: normal 400 16px/32px 'Lexend', sans-serif;
+  color: #888b97;
+  font: normal 400 16px/32px "Lexend", sans-serif;
+}
+
+h5 {
+  color: #1b1c57;
+  font: normal 600 16px/24px "Lexend", sans-serif;
+}
+
+h6 {
+  color: #68799F;
+  font: normal 400 12px/20px "Lexend", sans-serif;
 }
 
 header {
@@ -47,9 +57,10 @@ header #site-branding {
 
 header #site-branding p {
   font: normal 700 16px/20px "Lexend", sans-serif;
-  padding-left: 12px;
+  padding: 0 0 0 12px;
+  margin: 0;
   text-transform: capitalize;
-  color: #1B1C57;
+  color: #1b1c57;
 }
 
 header #site-navigation {
@@ -122,7 +133,7 @@ header #site-navigation ul .sub-menu a:hover {
   padding-left: 25px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #1B1C57;
+  color: #1b1c57;
 }
 
 header #site-navigation ul #menu-item-10 a {

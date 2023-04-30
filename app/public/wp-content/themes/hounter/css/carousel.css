@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+h1 {
+  font: normal 600 40px/50px "Lexend", sans-serif;
+  color: #1b1c57;
+  text-transform: capitalize;
+}
+
+h2 {
+  color: #1b1c57;
+  font: normal 600 32px/40px "Lexend", sans-serif;
+}
+
+h3 {
+  font: normal 400 16px/28px "Lexend", sans-serif;
+  color: #626687;
+}
+
+h4 {
+  color: #888b97;
+  font: normal 400 16px/32px "Lexend", sans-serif;
+}
+
+h5 {
+  color: #1b1c57;
+  font: normal 600 16px/24px "Lexend", sans-serif;
+}
+
+h6 {
+  color: #68799F;
+  font: normal 400 12px/20px "Lexend", sans-serif;
+}
+
+.slider-right-content {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.slider-right-content .text-center.my-3 {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  width: 47.3%;
+}
+
+.slider-right-content .text-center.my-3 .carousel-item {
+  width: auto;
+}
+
+.slider-right-content .text-center.my-3 .carousel-item .col-md-3 .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 24px;
+  border-radius: 32px;
+}
+
+.slider-right-content .text-center.my-3 .carousel-item .col-md-3 .card .card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 0 0 0 16px;
+}
+
+.slider-right-content .text-center.my-3 .carousel-item .col-md-3 .card .card-img-overlay h5 {
+  margin-bottom: 2px;
+}
+
+.slider-right-content .text-center.my-3 .carousel-item .col-md-3 .card .card-img {
+  width: auto;
+}
+
+div#recipeCarousel {
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .col-md-3 {
+    width: auto;
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=carousel.css.map */

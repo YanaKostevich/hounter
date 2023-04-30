@@ -1,0 +1,16 @@
+.header-blur{
+    width: 741px;
+    height: 523px;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to right top, #c0fae8, #C8FDF6);
+    // background: linear-gradient(to right top, #a6ffe3, #c3fff7);
+    // opacity: 0.3;
+    -webkit-filter: blur(60px);
+    filter: blur(60px);
+    transform: rotate(164deg);
+    top: -252px;
+    left: -160px;
+    border-radius: 100%;
+   
+}
