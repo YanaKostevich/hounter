@@ -39,3 +39,20 @@ Stack trace:
 #5 /Users/jane_kost/Local Sites/hounter/app/public/wp-admin/post.php(187): require('/Users/jane_kos...')
 #6 {main}
   thrown in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/plugins/nextend-smart-slider3-pro/Nextend/SmartSlider3/Platform/WordPress/Shortcode/Shortcode.php on line 248
+[01-May-2023 17:55:01 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:55:01 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:55:40 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:55:40 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:56:08 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:56:08 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:56:58 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:56:58 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:57:48 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:57:48 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151
+[01-May-2023 17:58:53 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php:151
+Stack trace:
+#0 /Users/jane_kost/Local Sites/hounter/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/jane_kost/Local Sites/hounter/app/public/wp-blog-header.php(19): require_once('/Users/jane_kos...')
+#2 /Users/jane_kost/Local Sites/hounter/app/public/index.php(17): require('/Users/jane_kos...')
+#3 {main}
+  thrown in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 151

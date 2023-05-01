@@ -14,8 +14,8 @@ $transition: all 0.5s ease;
 
 // $hero-title-font: normal 600 40px/50px 'Lexend', sans-serif;
 // $title-font: normal 600 32px/40px 'Lexend', sans-serif;
-// $subtitle-font: normal 400 16px/28px 'Lexend', sans-serif;
 $menu: normal 400 14px/18px "Lexend", sans-serif;
+$small-font: normal 500 14px/18px "Lexend", sans-serif;
 
 h1 {
   font: normal 600 40px/50px "Lexend", sans-serif;
@@ -39,6 +39,12 @@ h5 {
   font: normal 600 16px/24px "Lexend", sans-serif;
 }
 h6 {
-  color: #68799F;;
+  color: #68799f;
   font: normal 400 12px/20px "Lexend", sans-serif;
+}
+body {
+  background-color: $body-color;
+  a {
+    cursor: pointer;
+  }
 }

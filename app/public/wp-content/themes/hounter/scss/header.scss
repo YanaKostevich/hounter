@@ -1,6 +1,7 @@
 @import "variables";
 
 header {
+    margin: 40px 120px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +25,7 @@ header {
             display: flex;
             align-items: center;
             list-style: none;
+            gap: 24px;
             li {
                 transition: 0.5s;
                 a {
@@ -116,9 +118,6 @@ header {
                         transition: 0.3s;
                     }
                 }
-            }
-            :nth-child(2) {
-                margin: 0 24px;
             }
         }
     }

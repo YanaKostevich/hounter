@@ -26,7 +26,15 @@ h5 {
 }
 
 h6 {
-  color: #68799F;
+  color: #68799f;
   font: normal 400 12px/20px "Lexend", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+body a {
+  cursor: pointer;
 }
 /*# sourceMappingURL=footer.css.map */

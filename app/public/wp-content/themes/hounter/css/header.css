@@ -26,11 +26,20 @@ h5 {
 }
 
 h6 {
-  color: #68799F;
+  color: #68799f;
   font: normal 400 12px/20px "Lexend", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
+body a {
+  cursor: pointer;
+}
+
 header {
+  margin: 40px 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +84,7 @@ header #site-navigation ul {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  gap: 24px;
 }
 
 header #site-navigation ul li {
@@ -201,9 +211,5 @@ header #site-navigation ul .menu_button a:hover {
   color: #f0f3fd;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-header #site-navigation ul :nth-child(2) {
-  margin: 0 24px;
 }
 /*# sourceMappingURL=header.css.map */
