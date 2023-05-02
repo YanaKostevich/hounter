@@ -99,7 +99,7 @@ body a {
   width: auto;
 }
 
-div#recipeCarousel {
+.carousel-1.slide.pointer-event {
   padding-right: 0;
 }
 
@@ -145,6 +145,12 @@ div#recipeCarousel {
     display: flex;
     padding-right: 16px;
   }
+  .col-md-4 {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .carousel-inner .carousel-item-end,
@@ -152,6 +158,134 @@ div#recipeCarousel {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.recommendation .text-center.my-4 .carousel-item {
+  width: 100%;
+  gap: 40px;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  border-radius: 24px;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img {
+  position: relative;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img {
+  position: relative;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: #fee2e2;
+  padding: 8px 16px;
+  border-radius: 32px;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .text_houses {
+  padding-left: 12px;
+  color: #ef4444;
+  font: normal 500 14px/18px "Lexend", sans-serif;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .text_cosmos {
+  padding-left: 12px;
+  color: #ef4444;
+  font: normal 500 14px/18px "Lexend", sans-serif;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .text_light {
+  padding-left: 12px;
+  color: #047857;
+  font: normal 500 14px/18px "Lexend", sans-serif;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .text_wood {
+  padding-left: 12px;
+  color: #1D4ED8;
+  font: normal 500 14px/18px "Lexend", sans-serif;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img {
+  width: 100%;
+  text-align: left;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .title_price {
+  padding: 24px 0;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .title_price p {
+  margin-bottom: 8px;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .title_price .title {
+  font: normal 500 24px/32px "Lexend", sans-serif;
+  color: #0E1735;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .title_price .price {
+  font: normal 500 20px/32px "Lexend", sans-serif;
+  color: #3C4563;
+  margin-bottom: 0;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city {
+  padding-left: 16px;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city .name {
+  color: #0E1735;
+  font: normal 500 18px/24px "Lexend", sans-serif;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city .city {
+  color: #888B97;
+  font: normal 500 14px/22px "Lexend", sans-serif;
 }
 
 .recommendation button.carousel-control-prev.active {
@@ -190,5 +324,9 @@ div#recipeCarousel {
 .recommendation .carousel-control-next-icon,
 .recommendation .carousel-control-prev-icon {
   width: 1rem;
+}
+
+.recommendation div#carouselExampleControls {
+  padding: 0;
 }
 /*# sourceMappingURL=carousel.css.map */

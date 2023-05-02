@@ -196,8 +196,7 @@ body a {
 }
 
 #page main .recommendation {
-  margin-top: 120px;
-  margin-left: 160px;
+  margin: 120px 0 120px 160px;
 }
 
 #page main .recommendation .small_title {
@@ -207,6 +206,7 @@ body a {
 
 #page main .recommendation .small_title p {
   position: relative;
+  margin-bottom: 12px;
 }
 
 #page main .recommendation .small_title p::after {
@@ -228,6 +228,7 @@ body a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 120px;
+  margin-bottom: 40px;
 }
 
 #page main .recommendation .tabs_recommendation .tabs ul {

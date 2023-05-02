@@ -44,7 +44,7 @@
         }
     }
 }
-div#recipeCarousel {
+.carousel-1.slide.pointer-event {
     padding-right: 0;
 }
 @media (max-width: 767px) {
@@ -83,6 +83,10 @@ div#recipeCarousel {
         display: flex;
         padding-right: 16px;
     }
+    .col-md-4 {
+        width: auto;
+        display: flex;
+    }
 }
 
 .carousel-inner .carousel-item-end,
@@ -90,8 +94,103 @@ div#recipeCarousel {
     transform: translateX(0);
     opacity: 1;
 }
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .recommendation {
+    .text-center.my-4 {
+        .carousel-item {
+            width: 100%;
+            gap: 40px;
+            .col-md-4 {
+                .body {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    border: none;
+                    border-radius: 24px;
+                    .body-img {
+                        position: relative;
+                        .img {
+                            position: relative;
+                        }
+                        .text_absolute {
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            bottom: 16px;
+                            left: 16px;
+                            background: #fee2e2;
+                            padding: 8px 16px;
+                            border-radius: 32px;
+                            .icons {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            .text_houses {
+                                padding-left: 12px;
+                                color: #ef4444;
+                                font: normal 500 14px/18px "Lexend", sans-serif;
+                            }
+                            .text_cosmos{
+                                padding-left: 12px;
+                                color: #ef4444;
+                                font: normal 500 14px/18px "Lexend", sans-serif;
+                            }
+                            .text_light{
+                                padding-left: 12px;
+                                color: #047857;
+                                font: normal 500 14px/18px "Lexend", sans-serif;
+                            }
+                            .text_wood{
+                                padding-left: 12px;
+                                color: #1D4ED8;
+                                font: normal 500 14px/18px "Lexend", sans-serif;
+                            }
+                        }
+                    }
+
+                    .card-img {
+                        width: 100%;
+                        text-align: left;
+                        .title_price {
+                            padding: 24px 0;
+                            p {
+                                margin-bottom: 8px;
+                            }
+                            .title{
+                                font: normal 500 24px/32px "Lexend", sans-serif;
+                                color: #0E1735;
+                            }
+                            .price{
+                                font: normal 500 20px/32px "Lexend", sans-serif;
+                                color: #3C4563;
+                                margin-bottom: 0;
+                            }
+                        }
+                        .person {
+                            display: flex;
+                            align-items: center;
+                            .avatar {
+                            }
+                            .name_city {
+                                padding-left: 16px;
+                                .name {
+                                    color: #0E1735;
+                                    font: normal 500 18px/24px "Lexend", sans-serif;
+                                }
+                                .city {
+                                    color: #888B97;
+                                    font: normal 500 14px/22px "Lexend", sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     button.carousel-control-prev.active {
         background: #10b981;
         .carousel-control-prev-icon {
@@ -121,5 +220,8 @@ div#recipeCarousel {
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
         width: 1rem;
+    }
+    div#carouselExampleControls{
+        padding: 0;
     }
 }

@@ -114,13 +114,13 @@
             }
         }
         .recommendation {
-            margin-top: 120px;
-            margin-left: 160px;
+            margin: 120px 0 120px 160px;
             .small_title {
                 font: $small-font;
                 color: $yellow;
                 p {
                     position: relative;
+                    margin-bottom: 12px;
                     &::after {
                         content: "";
                         display: block;
@@ -137,6 +137,7 @@
                 display: flex;
                 justify-content: space-between;
                 margin-right: 120px;
+                margin-bottom: 40px;
                 .tabs {
                     ul {
                         margin: 0;
@@ -193,8 +194,6 @@
                     display: flex;
                     justify-content: space-between;
                 }
-            }
-            .tab-content {
             }
         }
     }
