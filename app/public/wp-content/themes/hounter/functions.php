@@ -7,6 +7,8 @@
  * @package hounter
  */
 
+
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -31,6 +33,7 @@ function hounter_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	
 	/*
 		* Let WordPress manage the document title.
 		* By adding theme support, we declare that this theme does not use a
@@ -52,6 +55,7 @@ function hounter_setup() {
 			'menu-1' => esc_html__( 'Primary', 'hounter' ),
 		)
 	);
+	
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
@@ -145,6 +149,7 @@ function hounter_scripts() {
 	wp_enqueue_style( 'main-footer', get_template_directory_uri() . '/css/footer.css');
 	wp_enqueue_style( 'main-blur', get_template_directory_uri() . '/css/blur.css');
 	wp_enqueue_style( 'main-carousel', get_template_directory_uri() . '/css/carousel.css');
+	wp_enqueue_style( 'main-modal', get_template_directory_uri() . '/css/modal.css');
 
 	wp_enqueue_script( 'hounter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'hounter-carousel', get_template_directory_uri() . '/js/carousel.js', array(), _S_VERSION, true );

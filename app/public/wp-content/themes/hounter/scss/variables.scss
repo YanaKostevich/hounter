@@ -48,3 +48,24 @@ body {
     cursor: pointer;
   }
 }
+.recommendation, .ready{
+  .small_title {
+    font: $small-font;
+    color: $yellow;
+    p {
+        position: relative;
+        margin-bottom: 12px;
+        &::after {
+            content: "";
+            display: block;
+            width: 32px;
+            height: 1px;
+            border-bottom: 1px solid;
+            top: 8px;
+            position: absolute;
+            margin-left: -40px;
+        }
+    }
+  }
+}
+

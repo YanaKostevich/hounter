@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+h1 {
+  font: normal 600 40px/50px "Lexend", sans-serif;
+  color: #1b1c57;
+  text-transform: capitalize;
+}
+
+h2 {
+  color: #1b1c57;
+  font: normal 600 32px/40px "Lexend", sans-serif;
+}
+
+h3 {
+  font: normal 400 16px/28px "Lexend", sans-serif;
+  color: #626687;
+}
+
+h4 {
+  color: #888b97;
+  font: normal 400 16px/32px "Lexend", sans-serif;
+}
+
+h5 {
+  color: #1b1c57;
+  font: normal 600 16px/24px "Lexend", sans-serif;
+}
+
+h6 {
+  color: #68799f;
+  font: normal 400 12px/20px "Lexend", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+body a {
+  cursor: pointer;
+}
+
+.recommendation .small_title, .ready .small_title {
+  font: normal 500 14px/18px "Lexend", sans-serif;
+  color: #f59e0b;
+}
+
+.recommendation .small_title p, .ready .small_title p {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.recommendation .small_title p::after, .ready .small_title p::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  border-bottom: 1px solid;
+  top: 8px;
+  position: absolute;
+  margin-left: -40px;
+}
+
+.ready .carousel-2 .carousel-inner .carousel-item .body_ready_slider .left .modal-content {
+  background-color: transparent;
+  border: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ready .carousel-2 .carousel-inner .carousel-item .body_ready_slider .left .modal-content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.ready .carousel-2 .carousel-inner .carousel-item .body_ready_slider .left .modal-content img {
+  width: 100%;
+}
+
+.ready .carousel-2 .carousel-inner .carousel-item .body_ready_slider .left .modal-content button.btn.btn-primary {
+  background-color: #10b981;
+  border-radius: 32px;
+  padding: 13px 16px;
+  color: #ffffff;
+  font: normal 600 14px/22px "Lexend", sans-serif;
+  border: none;
+  margin-top: 34px;
+}
+/*# sourceMappingURL=modal.css.map */

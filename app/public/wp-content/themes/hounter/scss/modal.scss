@@ -1,0 +1,40 @@
+@import "variables";
+.ready{
+    .carousel-2{
+        .carousel-inner{
+            .carousel-item{
+                .body_ready_slider{
+                    .left{
+                        .modal-content{
+                            background-color: transparent;
+                            border: none;
+                            align-items: flex-end;
+                           .button{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 40%;
+
+                           }
+                            img{
+                                width: 100%;
+                            }
+                            button.btn.btn-primary {
+                                background-color: $button-background;
+                                border-radius: 32px;
+                                padding: 13px 16px;
+                                color: #ffffff;
+                                font: normal 600 14px/22px "Lexend", sans-serif;
+                                border: none;
+                                margin-top: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+}
