@@ -94,7 +94,8 @@
     transform: translateX(0);
     opacity: 1;
 }
-/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 .recommendation {
     .text-center.my-4 {
         .carousel-item {
@@ -112,6 +113,9 @@
                         position: relative;
                         .img {
                             position: relative;
+                            img{
+                                border-radius: 24px;
+                            }
                         }
                         .text_absolute {
                             display: flex;

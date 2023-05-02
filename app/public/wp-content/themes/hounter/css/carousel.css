@@ -160,7 +160,6 @@ body a {
   opacity: 1;
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .recommendation .text-center.my-4 .carousel-item {
   width: 100%;
   gap: 40px;
@@ -188,6 +187,10 @@ body a {
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img {
   position: relative;
+}
+
+.recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img img {
+  border-radius: 24px;
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute {
