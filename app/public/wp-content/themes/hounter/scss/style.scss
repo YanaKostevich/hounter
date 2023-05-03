@@ -452,5 +452,168 @@
                 }
             }
         }
+        .subscribe {
+            margin: 0 120px 120px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            .subscribe-icons-left {
+                position: absolute;
+                left: 0;
+                width: 25%;
+                .icons-1 {
+                    position: absolute;
+                    top: 38px;
+                    left: 44px;
+                    img {
+                        width: 81px;
+                    }
+                }
+                .icons-2 {
+                    position: absolute;
+                    top: 60px;
+                    left: 170px;
+                }
+                .icons-3 {
+                    position: absolute;
+                    top: 143px;
+                    left: 30px;
+                }
+                .icons-4 {
+                    position: absolute;
+                    top: 178px;
+                    left: 195px;
+                }
+            }
+            .subscribe-icons-right {
+                position: absolute;
+                right: 0;
+                width: 25%;
+                .icons-5 {
+                    position: absolute;
+                    top: 44px;
+                    right: 200px;
+                }
+                .icons-6 {
+                    position: absolute;
+                    top: 85px;
+                    right: 55px;
+                }
+                .icons-7 {
+                    position: absolute;
+                    top: 120px;
+                    left: 30px;
+                }
+                .icons-8 {
+                    position: absolute;
+                    top: 197px;
+                    right: 73px;
+                }
+            }
+            .subscribe_info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 65px 0;
+                h2 {
+                    color: $main-color;
+                    font: normal 600 32px/40px "Lexend", sans-serif;
+                    width: 55%;
+                    text-transform: capitalize;
+                    padding-bottom: 32px;
+                }
+                .mail {
+                    position: relative;
+                    form {
+                        p {
+                            margin: 0;
+
+                            label {
+                                display: flex;
+                                margin: 0;
+                                .icon {
+                                    background: url("../svg/mail.svg") no-repeat;
+                                    padding: 16px;
+                                    font: normal 300 14px/22px "Lexend", sans-serif;
+                                    position: absolute;
+                                    z-index: 1;
+                                    top: 21px;
+                                    left: 26px;
+                                }
+                            }
+                        }
+                        .submit-subscribe {
+                            position: absolute;
+                            top: 3px;
+                            right: 3px;
+                            p {
+                                padding: 0;
+                                margin: 0;
+                                input {
+                                    background-color: $button-background;
+                                    border: none;
+                                    font: normal 500 14px/22px "Lexend", sans-serif;
+                                    color: #fff;
+                                    padding: 14px 16px;
+                                    border-radius: 32px;
+                                }
+                                .wpcf7-spinner {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .wpcf7 form.invalid .wpcf7-response-output,
+                    .wpcf7 form.unaccepted .wpcf7-response-output,
+                    .wpcf7 form.payment-required .wpcf7-response-output {
+                        display: none;
+                    }
+                    .wpcf7 input[type="url"],
+                    .wpcf7 input[type="email"],
+                    .wpcf7 input[type="tel"] {
+                        width: 496px;
+                        padding: 16px 16px 16px 64px;
+                        background: #ffffff;
+                        box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+                        border-radius: 32px;
+                        transition: all 0.5s ease-in-out;
+                        position: relative;
+                        outline: none;
+                        color: $main-color;
+                        font: normal 400 16px/22px "Lexend", sans-serif;
+                        &::placeholder {
+                            color: #888b97;
+                            font: normal 400 14px/22px "Lexend", sans-serif;
+                        }
+                    }
+
+                    .submit-subscribe:focus ~ .wpcf7 input[type="email"] {
+                        width: 600px;
+                        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+                    }
+                    .wpcf7 input[type="email"]:focus {
+                        width: 600px;
+                        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+                    }
+                    span.wpcf7-not-valid-tip {
+                        padding-top: 15px;
+                        padding-left: 20px;
+                        text-align: left;
+                        font: normal 400 14px/22px "Lexend", sans-serif;
+                    }
+                    .wpcf7 form.sent .wpcf7-response-output {
+                        border: none;
+                        padding-top: 15px;
+                        padding-left: 20px;
+                        text-align: left;
+                        font: normal 400 14px/22px "Lexend", sans-serif;
+                        color: $button-background;
+                        margin: 0;
+                    }
+                }
+            }
+        }
     }
 }

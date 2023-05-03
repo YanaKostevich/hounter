@@ -11,5 +11,32 @@
     top: -252px;
     left: -160px;
     border-radius: 100%;
-   
+}
+.subscribe{
+    overflow: hidden;
+    border-radius: 32px;
+    .background-left{
+        position: absolute;
+    top: 0px;
+    left: -5%;
+    height: 500px;
+    width: 60%;
+    z-index: -1;
+    -webkit-filter: blur(60px);
+    filter: blur(60px);
+    background: #7895f6;
+    background: linear-gradient(138deg, #7895f6 0%, #e5eaf5 41%, #a9fff39e 100%);
+    }
+    .background-right{
+        position: absolute;
+        top: -20%;
+        height: 300px;
+        right: -25%;
+        width: 70%;
+        z-index: -1;
+        -webkit-filter: blur(60px);
+        filter: blur(60px);
+        background: #a9fff39e;
+        background: linear-gradient(33deg, #a9fff39e 0%, #e5eaf5 41%, #7895f6 100%);
+    }
 }

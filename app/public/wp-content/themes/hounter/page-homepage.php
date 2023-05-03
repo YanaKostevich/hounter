@@ -1342,6 +1342,7 @@ get_header();
 
 		</div>
 	</div>
+
 	<section class="buying_home">
 		<article class="small_title">
 			<p><?php the_field('small_title_partnership'); ?></p>
@@ -1385,8 +1386,63 @@ get_header();
 	</section>
 
 	<section class="subscribe">
-		
-		<?php echo do_shortcode('[contact-form-7 id="355" title="Contact form 1"]'); ?>
+
+		<article class="background-left"></article>
+		<article class="background-right"></article>
+
+		<section class="subscribe-icons-left">
+			<figure class="icons-1">
+				<?php if (get_field('img_1')) : ?>
+					<img src="<?php the_field('img_1'); ?>" />
+				<?php endif; ?>
+			</figure>
+			<figure class="icons-2">
+				<?php if (get_field('img_2')) : ?>
+					<img src="<?php the_field('img_2'); ?>" />
+				<?php endif; ?>
+			</figure>
+			<figure class="icons-3">
+				<?php if (get_field('img_3')) : ?>
+					<img src="<?php the_field('img_3'); ?>" />
+				<?php endif; ?>
+			</figure>
+			<figure class="icons-4">
+				<?php if (get_field('img_4')) : ?>
+					<img src="<?php the_field('img_4'); ?>" />
+				<?php endif; ?>
+			</figure>
+		</section>
+
+		<section class="subscribe-icons-right">
+			<figure class="icons-5">
+				<?php if (get_field('img_5')) : ?>
+					<img src="<?php the_field('img_5'); ?>" />
+				<?php endif; ?>
+			</figure>
+			<figure class="icons-6">
+				<?php if (get_field('img_6')) : ?>
+					<img src="<?php the_field('img_6'); ?>" />
+				<?php endif; ?>
+			</figure>
+			<figure class="icons-7">
+				<?php if (get_field('img_7')) : ?>
+					<img src="<?php the_field('img_7'); ?>" />
+				<?php endif; ?>
+			</figure>
+			<figure class="icons-8">
+				<?php if (get_field('img_8')) : ?>
+					<img src="<?php the_field('img_8'); ?>" />
+				<?php endif; ?>
+			</figure>
+		</section>
+
+		<section class="subscribe_info">
+			<h2> <?php the_field('subscribe_info_title'); ?></h2>
+			<article class="mail">
+				<?php echo do_shortcode('[contact-form-7 id="355" title="Contact form 1"]'); ?>
+			</article>
+
+		</section>
 	</section>
 
 </main><!-- #main -->
