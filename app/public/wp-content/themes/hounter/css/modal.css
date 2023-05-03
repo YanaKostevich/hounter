@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  font: normal 400 16px/28px "Lexend", sans-serif;
+  font: normal 200 16px/28px "Lexend", sans-serif;
   color: #626687;
   padding: 0;
   margin: 0;
@@ -23,21 +23,21 @@ h3 {
 
 h4 {
   color: #888b97;
-  font: normal 400 16px/32px "Lexend", sans-serif;
+  font: normal 200 16px/32px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 h5 {
   color: #1b1c57;
-  font: normal 600 16px/24px "Lexend", sans-serif;
+  font: normal 500 16px/24px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 h6 {
   color: #68799f;
-  font: normal 400 12px/20px "Lexend", sans-serif;
+  font: normal 200 12px/20px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -52,7 +52,7 @@ body a {
 
 .recommendation .small_title,
 .ready .small_title {
-  font: normal 500 14px/18px "Lexend", sans-serif;
+  font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
@@ -74,27 +74,47 @@ body a {
   margin-left: -40px;
 }
 
-.see_review .small_title,
-.buying_home .small_title {
+.see_review .small_title {
   text-align: center;
-  font: normal 500 14px/18px "Lexend", sans-serif;
+  font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
-.see_review .small_title p,
+.see_review .small_title p {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.see_review .small_title p::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  border-top: 1px solid;
+  left: 48.9%;
+  top: -8px;
+  position: absolute;
+  margin: 0;
+}
+
+.buying_home .small_title {
+  text-align: center;
+  font: normal 300 14px/18px "Lexend", sans-serif;
+  color: #f59e0b;
+}
+
 .buying_home .small_title p {
   position: relative;
   margin-bottom: 12px;
 }
 
-.see_review .small_title p::before,
 .buying_home .small_title p::before {
   content: "";
   display: block;
   width: 32px;
   height: 1px;
   border-top: 1px solid;
-  left: 49%;
+  left: 44%;
   top: -8px;
   position: absolute;
   margin: 0;

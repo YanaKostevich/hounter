@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  font: normal 400 16px/28px "Lexend", sans-serif;
+  font: normal 200 16px/28px "Lexend", sans-serif;
   color: #626687;
   padding: 0;
   margin: 0;
@@ -23,21 +23,21 @@ h3 {
 
 h4 {
   color: #888b97;
-  font: normal 400 16px/32px "Lexend", sans-serif;
+  font: normal 200 16px/32px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 h5 {
   color: #1b1c57;
-  font: normal 600 16px/24px "Lexend", sans-serif;
+  font: normal 500 16px/24px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 h6 {
   color: #68799f;
-  font: normal 400 12px/20px "Lexend", sans-serif;
+  font: normal 200 12px/20px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -52,7 +52,7 @@ body a {
 
 .recommendation .small_title,
 .ready .small_title {
-  font: normal 500 14px/18px "Lexend", sans-serif;
+  font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
@@ -74,30 +74,54 @@ body a {
   margin-left: -40px;
 }
 
-.see_review .small_title,
-.buying_home .small_title {
+.see_review .small_title {
   text-align: center;
-  font: normal 500 14px/18px "Lexend", sans-serif;
+  font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
-.see_review .small_title p,
+.see_review .small_title p {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.see_review .small_title p::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  border-top: 1px solid;
+  left: 48.9%;
+  top: -8px;
+  position: absolute;
+  margin: 0;
+}
+
+.buying_home .small_title {
+  text-align: center;
+  font: normal 300 14px/18px "Lexend", sans-serif;
+  color: #f59e0b;
+}
+
 .buying_home .small_title p {
   position: relative;
   margin-bottom: 12px;
 }
 
-.see_review .small_title p::before,
 .buying_home .small_title p::before {
   content: "";
   display: block;
   width: 32px;
   height: 1px;
   border-top: 1px solid;
-  left: 49%;
+  left: 44%;
   top: -8px;
   position: absolute;
   margin: 0;
+}
+
+#page main {
+  overflow: hidden;
 }
 
 #page main .hero-section {
@@ -156,22 +180,22 @@ body a {
 }
 
 #page main .hero-section .left-content .search-box .input-search::-webkit-input-placeholder {
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 300 14px/22px "Lexend", sans-serif;
   color: #888b97;
 }
 
 #page main .hero-section .left-content .search-box .input-search:-ms-input-placeholder {
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 300 14px/22px "Lexend", sans-serif;
   color: #888b97;
 }
 
 #page main .hero-section .left-content .search-box .input-search::-ms-input-placeholder {
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 300 14px/22px "Lexend", sans-serif;
   color: #888b97;
 }
 
 #page main .hero-section .left-content .search-box .input-search::placeholder {
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 300 14px/22px "Lexend", sans-serif;
   color: #888b97;
 }
 
@@ -200,7 +224,7 @@ body a {
   background-color: #10b981;
   pointer-events: painted;
   padding: 13px 44px 13px 16px;
-  font: normal 600 14px/22px "Lexend", sans-serif;
+  font: normal 500 14px/22px "Lexend", sans-serif;
 }
 
 #page main .hero-section .left-content .search-box .btn-search:after {
@@ -321,7 +345,7 @@ body a {
 #page main .recommendation .tabs_recommendation .tabs #apartment-tab p {
   margin: 0;
   padding-left: 11px;
-  font: normal 500 18px/28px "Lexend", sans-serif;
+  font: normal 400 18px/28px "Lexend", sans-serif;
   color: #888b97;
 }
 
@@ -344,6 +368,7 @@ body a {
 
 #page main .ready {
   margin: 0 120px 120px 160px;
+  position: relative;
 }
 
 #page main .ready .body_ready_slider {
@@ -370,7 +395,7 @@ body a {
 
 #page main .ready .body_ready_slider .right .text .detail p {
   color: #1b1c57;
-  font: normal 600 18px/28px "Lexend", sans-serif;
+  font: normal 500 18px/28px "Lexend", sans-serif;
 }
 
 #page main .ready .body_ready_slider .right .text .detail .house_detail {
@@ -397,7 +422,7 @@ body a {
 }
 
 #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text p {
-  font: normal 500 16px/20px "Lexend", sans-serif;
+  font: normal 400 16px/20px "Lexend", sans-serif;
   color: #3c4563;
   margin: 0;
   padding-left: 20px;
@@ -424,14 +449,14 @@ body a {
 }
 
 #page main .ready .body_ready_slider .right .text .detail .contact .info_employee .name_position h6 {
-  font: normal 500 18px/24px "Lexend", sans-serif;
+  font: normal 400 18px/24px "Lexend", sans-serif;
   color: #0e1735;
   margin: 0;
   padding-bottom: 4px;
 }
 
 #page main .ready .body_ready_slider .right .text .detail .contact .info_employee .name_position p {
-  font: normal 500 16px/24px "Lexend", sans-serif;
+  font: normal 300 16px/24px "Lexend", sans-serif;
   color: #888b97;
   margin: 0;
 }
@@ -548,12 +573,12 @@ body a {
 
 #page main .see_review .body_review_slider .content_slider .text h4 {
   color: #1b1c57;
-  font: normal 600 20px/25px "Lexend", sans-serif;
+  font: normal 500 20px/25px "Lexend", sans-serif;
   padding-bottom: 16px;
 }
 
 #page main .see_review .body_review_slider .content_slider .text p {
-  font: normal 400 14px/24px "Lexend", sans-serif;
+  font: normal 200 14px/24px "Lexend", sans-serif;
   color: #626687;
   padding: 0;
   margin: 0;
@@ -586,13 +611,13 @@ body a {
 }
 
 #page main .see_review .body_review_slider .content_slider .text .employee .info .name h5 {
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 400 14px/22px "Lexend", sans-serif;
   color: #0e1735;
   padding-bottom: 4px;
 }
 
 #page main .see_review .body_review_slider .content_slider .text .employee .info .name h6 {
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 300 14px/22px "Lexend", sans-serif;
   color: #888b97;
 }
 
@@ -610,6 +635,7 @@ body a {
 
 #page main .buying_home {
   margin: 120px;
+  position: relative;
 }
 
 #page main .buying_home .small_title {
@@ -624,6 +650,11 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 42px;
+}
+
+#page main .buying_home .small_title h2 {
+  text-transform: capitalize;
+  width: 37%;
 }
 
 #page main .buying_home .small_title button {
@@ -652,7 +683,7 @@ body a {
 #page main .buying_home .small_title button a {
   text-decoration: none;
   color: #ffffff;
-  font: normal 600 14px/22px "Lexend", sans-serif;
+  font: normal 500 14px/22px "Lexend", sans-serif;
   padding: 12px 16px;
 }
 
@@ -665,6 +696,7 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   gap: 44px 68px;
+  position: relative;
 }
 
 #page main .buying_home .post-all .post {
@@ -709,7 +741,7 @@ body a {
 
 #page main .buying_home .post-all .post .post-txt h3 {
   color: #1b1c57;
-  font: normal 500 18px/32px "Lexend", sans-serif;
+  font: normal 400 18px/32px "Lexend", sans-serif;
   padding: 12px 0 16px 0;
   text-transform: capitalize;
 }
@@ -730,12 +762,23 @@ body a {
 #page main .buying_home .post-all .post .post-txt .author h4 {
   padding-left: 16px;
   color: #3c4563;
-  font: normal 400 14px/22px "Lexend", sans-serif;
+  font: normal 300 14px/22px "Lexend", sans-serif;
 }
 
 #page main .buying_home .post-all .post .post-txt .post-date {
-  font: normal 400 14px/24px "Lexend", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page main .buying_home .post-all .post .post-txt .post-date p {
+  font: normal 200 14px/24px "Lexend", sans-serif;
   color: #888b97;
+  padding-left: 14px;
+  margin: 0;
 }
 
 #page main .subscribe {
@@ -875,7 +918,7 @@ body a {
 #page main .subscribe .subscribe_info .mail form .submit-subscribe p input {
   background-color: #10b981;
   border: none;
-  font: normal 500 14px/22px "Lexend", sans-serif;
+  font: normal 400 14px/22px "Lexend", sans-serif;
   color: #fff;
   padding: 14px 16px;
   border-radius: 32px;

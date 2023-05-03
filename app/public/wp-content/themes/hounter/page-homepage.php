@@ -317,7 +317,7 @@ get_header();
 														<?php endif; ?>
 													</div>
 													<div class="name_city">
-														<div class="name_light">
+														<div class="name">
 															<?php the_field('name_light'); ?>
 														</div>
 														<div class="city">
@@ -902,6 +902,8 @@ get_header();
 		<article class="small_title">
 			<p><?php the_field('small_title_ready'); ?></p>
 		</article>
+		<article class="blur-right-top"></article>
+		<article class="blur-right-bottom"></article>
 		<div class="carousel-2 slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -1344,6 +1346,8 @@ get_header();
 	</div>
 
 	<section class="buying_home">
+		<article class="blur-left-top"></article>
+		<article class="blur-left-bottom"></article>
 		<article class="small_title">
 			<p><?php the_field('small_title_partnership'); ?></p>
 			<h2> <?php the_field('title_partnership'); ?></h2>
@@ -1375,9 +1379,12 @@ get_header();
 							<?php if (get_field('icons_time')) : ?>
 								<img src="<?php the_field('icons_time'); ?>" />
 							<?php endif; ?>
-							<?php echo get_the_date('j F Y'); ?>
-							|
+							<p>
 							<?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' read'; ?>
+								|
+								<?php echo get_the_date('j F Y'); ?>
+							</p>
+
 						</article>
 					</section>
 				</section> <?php }

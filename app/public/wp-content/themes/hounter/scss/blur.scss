@@ -1,9 +1,9 @@
-.header-blur{
+.header-blur {
     width: 741px;
     height: 523px;
     position: absolute;
     z-index: -1;
-    background: linear-gradient(to right top, #c0fae8, #C8FDF6);
+    background: linear-gradient(to right top, #c0fae8, #c8fdf6);
     // background: linear-gradient(to right top, #a6ffe3, #c3fff7);
     -webkit-filter: blur(60px);
     filter: blur(60px);
@@ -12,22 +12,78 @@
     left: -160px;
     border-radius: 100%;
 }
-.subscribe{
+
+.ready {
+    .blur-right-top {
+        position: absolute;
+        width: 438px;
+        height: 494px;
+        right: -20%;
+        top: -30%;
+
+        background: #ff9882;
+        opacity: 0.3;
+        filter: blur(60px);
+        transform: rotate(90deg);
+    }
+    .blur-right-bottom {
+        position: absolute;
+        width: 438px;
+        height: 494px;
+        right: -20%;
+        top: -10%;
+
+        background: #fffa82;
+        opacity: 0.3;
+        filter: blur(60px);
+        transform: rotate(90deg);
+    }
+}
+
+.buying_home {
+    .blur-left-top {
+        position: absolute;
+        width: 438px;
+        height: 494px;
+        left: -25%;
+        top: -5%;
+
+        background: #82ffe8;
+        opacity: 0.3;
+        filter: blur(60px);
+        transform: rotate(249deg);
+    }
+    .blur-left-bottom {
+        position: absolute;
+        width: 438px;
+        height: 494px;
+        left: -25%;
+        top: 15%;
+
+        background: #c8ff82;
+        opacity: 0.3;
+        filter: blur(60px);
+        transform: rotate(265deg);
+        border-radius: 100%;
+    }
+}
+
+.subscribe {
     overflow: hidden;
     border-radius: 32px;
-    .background-left{
+    .background-left {
         position: absolute;
-    top: 0px;
-    left: -5%;
-    height: 500px;
-    width: 60%;
-    z-index: -1;
-    -webkit-filter: blur(60px);
-    filter: blur(60px);
-    background: #7895f6;
-    background: linear-gradient(138deg, #7895f6 0%, #e5eaf5 41%, #a9fff39e 100%);
+        top: 0px;
+        left: -5%;
+        height: 500px;
+        width: 60%;
+        z-index: -1;
+        -webkit-filter: blur(60px);
+        filter: blur(60px);
+        background: #7895f6;
+        background: linear-gradient(138deg, #7895f6 0%, #e5eaf5 41%, #a9fff39e 100%);
     }
-    .background-right{
+    .background-right {
         position: absolute;
         top: -20%;
         height: 300px;

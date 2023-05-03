@@ -3,14 +3,71 @@
   height: 523px;
   position: absolute;
   z-index: -1;
-  background: -webkit-gradient(linear, left bottom, right top, from(#c0fae8), to(#C8FDF6));
-  background: linear-gradient(to right top, #c0fae8, #C8FDF6);
+  background: -webkit-gradient(linear, left bottom, right top, from(#c0fae8), to(#c8fdf6));
+  background: linear-gradient(to right top, #c0fae8, #c8fdf6);
   -webkit-filter: blur(60px);
   filter: blur(60px);
   -webkit-transform: rotate(164deg);
           transform: rotate(164deg);
   top: -252px;
   left: -160px;
+  border-radius: 100%;
+}
+
+.ready .blur-right-top {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  right: -20%;
+  top: -30%;
+  background: #ff9882;
+  opacity: 0.3;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ready .blur-right-bottom {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  right: -20%;
+  top: -10%;
+  background: #fffa82;
+  opacity: 0.3;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.buying_home .blur-left-top {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  left: -25%;
+  top: -5%;
+  background: #82ffe8;
+  opacity: 0.3;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(249deg);
+          transform: rotate(249deg);
+}
+
+.buying_home .blur-left-bottom {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  left: -25%;
+  top: 15%;
+  background: #c8ff82;
+  opacity: 0.3;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(265deg);
+          transform: rotate(265deg);
   border-radius: 100%;
 }
 

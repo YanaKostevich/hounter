@@ -15,7 +15,7 @@ $transition: all 0.5s ease;
 // $hero-title-font: normal 600 40px/50px 'Lexend', sans-serif;
 // $title-font: normal 600 32px/40px 'Lexend', sans-serif;
 $menu: normal 400 14px/18px "Lexend", sans-serif;
-$small-font: normal 500 14px/18px "Lexend", sans-serif;
+$small-font: normal 300 14px/18px "Lexend", sans-serif;
 
 h1 {
   font: normal 600 40px/50px "Lexend", sans-serif;
@@ -31,26 +31,26 @@ h2 {
   margin: 0;
 }
 h3 {
-  font: normal 400 16px/28px "Lexend", sans-serif;
+  font: normal 200 16px/28px "Lexend", sans-serif;
   color: $subtitle-color;
   padding: 0;
   margin: 0;
 }
 h4 {
   color: #888b97;
-  font: normal 400 16px/32px "Lexend", sans-serif;
+  font: normal 200 16px/32px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
 h5 {
   color: $main-color;
-  font: normal 600 16px/24px "Lexend", sans-serif;
+  font: normal 500 16px/24px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
 h6 {
   color: #68799f;
-  font: normal 400 12px/20px "Lexend", sans-serif;
+  font: normal 200 12px/20px "Lexend", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -81,7 +81,28 @@ body {
     }
   }
 }
-.see_review,
+.see_review{
+  .small_title {
+    text-align: center;
+    font: $small-font;
+    color: $yellow;
+    p {
+      position: relative;
+      margin-bottom: 12px;
+      &::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 1px;
+        border-top: 1px solid;
+        left: 48.9%;
+        top: -8px;
+        position: absolute;
+        margin: 0;
+      }
+    }
+  }
+}
 .buying_home {
   .small_title {
     text-align: center;
@@ -96,7 +117,7 @@ body {
         width: 32px;
         height: 1px;
         border-top: 1px solid;
-        left: 49%;
+        left: 44%;
         top: -8px;
         position: absolute;
         margin: 0;
