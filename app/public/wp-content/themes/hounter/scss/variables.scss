@@ -21,26 +21,38 @@ h1 {
   font: normal 600 40px/50px "Lexend", sans-serif;
   color: $main-color;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
 }
 h2 {
   color: $main-color;
   font: normal 600 32px/40px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 h3 {
   font: normal 400 16px/28px "Lexend", sans-serif;
   color: $subtitle-color;
+  padding: 0;
+  margin: 0;
 }
 h4 {
   color: #888b97;
   font: normal 400 16px/32px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 h5 {
   color: $main-color;
   font: normal 600 16px/24px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 h6 {
   color: #68799f;
   font: normal 400 12px/20px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 body {
   background-color: $body-color;
@@ -48,24 +60,47 @@ body {
     cursor: pointer;
   }
 }
-.recommendation, .ready{
+.recommendation,
+.ready {
   .small_title {
     font: $small-font;
     color: $yellow;
     p {
-        position: relative;
-        margin-bottom: 12px;
-        &::after {
-            content: "";
-            display: block;
-            width: 32px;
-            height: 1px;
-            border-bottom: 1px solid;
-            top: 8px;
-            position: absolute;
-            margin-left: -40px;
-        }
+      position: relative;
+      margin-bottom: 12px;
+      &::after {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 1px;
+        border-bottom: 1px solid;
+        top: 8px;
+        position: absolute;
+        margin-left: -40px;
+      }
     }
   }
 }
-
+.see_review,
+.buying_home {
+  .small_title {
+    text-align: center;
+    font: $small-font;
+    color: $yellow;
+    p {
+      position: relative;
+      margin-bottom: 12px;
+      &::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 1px;
+        border-top: 1px solid;
+        left: 49%;
+        top: -8px;
+        position: absolute;
+        margin: 0;
+      }
+    }
+  }
+}

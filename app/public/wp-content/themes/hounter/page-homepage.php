@@ -1201,6 +1201,194 @@ get_header();
 			</div>
 		</div>
 	</div>
+
+	<div class="see_review">
+		<article class="small_title">
+			<p><?php the_field('small_title_review'); ?></p>
+			<h2> <?php the_field('title_review'); ?></h2>
+		</article>
+		<div id="carouselExampleControls1" class="carousel-3 slide" data-bs-ride="carousel">
+			<div class="text-center my-3">
+				<div class="row mx-auto my-auto justify-content-center">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="col-md-3">
+								<div class="body_review_slider">
+									<section class="content_slider_img">
+										<?php if (get_field('main_img_slider_1')) : ?>
+											<img src="<?php the_field('main_img_slider_1'); ?>" />
+										<?php endif; ?>
+									</section>
+									<section class="content_slider">
+										<section class="text">
+											<h4> <?php the_field('title_review_slider_1'); ?></h4>
+											<p> <?php the_field('subtitle_review_slider_1'); ?></p>
+
+											<section class="employee">
+												<section class="info">
+													<article>
+														<?php if (get_field('ava_employee_slider_1')) : ?>
+															<img src="<?php the_field('ava_employee_slider_1'); ?>" />
+														<?php endif; ?>
+													</article>
+													<article class="name">
+														<h5><?php the_field('name_employee_slider_1'); ?></h5>
+														<h6><?php the_field('position_employee_slider_1'); ?></h6>
+													</article>
+												</section>
+												<section class="star">
+													<article class="icons">
+														<?php if (get_field('icons_star_1')) : ?>
+															<img src="<?php the_field('icons_star_1'); ?>" />
+														<?php endif; ?>
+													</article>
+													<h3><?php the_field('rate_icons_slider_1'); ?></h3>
+												</section>
+
+											</section>
+										</section>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col-md-3">
+								<div class="body_review_slider">
+									<section class="content_slider_img">
+										<?php if (get_field('main_img_slider_2')) : ?>
+											<img src="<?php the_field('main_img_slider_2'); ?>" />
+										<?php endif; ?>
+									</section>
+									<section class="content_slider">
+										<section class="text">
+											<h4> <?php the_field('title_review_slider_2'); ?></h4>
+											<p> <?php the_field('subtitle_review_slider_2'); ?></p>
+
+											<section class="employee">
+												<section class="info">
+													<article>
+														<?php if (get_field('ava_employee_slider_2')) : ?>
+															<img src="<?php the_field('ava_employee_slider_2'); ?>" />
+														<?php endif; ?>
+													</article>
+													<article class="name">
+														<h5><?php the_field('name_employee_slider_2'); ?></h5>
+														<h6><?php the_field('position_employee_slider_2'); ?></h6>
+													</article>
+												</section>
+												<section class="star">
+													<article class="icons">
+														<?php if (get_field('icons_star_1')) : ?>
+															<img src="<?php the_field('icons_star_2'); ?>" />
+														<?php endif; ?>
+													</article>
+													<h3><?php the_field('rate_icons_slider_2'); ?></h3>
+												</section>
+
+											</section>
+										</section>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col-md-3">
+								<div class="body_review_slider">
+									<section class="content_slider_img">
+										<?php if (get_field('main_img_slider_1')) : ?>
+											<img src="<?php the_field('main_img_slider_3'); ?>" />
+										<?php endif; ?>
+									</section>
+									<section class="content_slider">
+										<section class="text">
+											<h4> <?php the_field('title_review_slider_3'); ?></h4>
+											<p> <?php the_field('subtitle_review_slider_3'); ?></p>
+
+											<section class="employee">
+												<section class="info">
+													<article>
+														<?php if (get_field('ava_employee_slider_3')) : ?>
+															<img src="<?php the_field('ava_employee_slider_3'); ?>" />
+														<?php endif; ?>
+													</article>
+													<article class="name">
+														<h5><?php the_field('name_employee_slider_3'); ?></h5>
+														<h6><?php the_field('position_employee_slider_3'); ?></h6>
+													</article>
+												</section>
+												<section class="star">
+													<article class="icons">
+														<?php if (get_field('icons_star_3')) : ?>
+															<img src="<?php the_field('icons_star_3'); ?>" />
+														<?php endif; ?>
+													</article>
+													<h3><?php the_field('rate_icons_slider_3'); ?></h3>
+												</section>
+
+											</section>
+										</section>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</button>
+
+		</div>
+	</div>
+	<section class="buying_home">
+		<article class="small_title">
+			<p><?php the_field('small_title_partnership'); ?></p>
+			<h2> <?php the_field('title_partnership'); ?></h2>
+			<button class="btn-more-article">
+				<?php
+				$link = get_field('more_artikel_button');
+				if ($link) : ?>
+					<a class="button" href="<?php echo esc_url($link); ?>">More Artikel</a>
+				<?php endif; ?>
+			</button>
+		</article>
+		<section class="post-all">
+			<?php global $post;
+			$args = array('numberposts' => 4, 'category' => 1, 'orderby' => 'date');
+			$myposts = get_posts($args);
+			foreach ($myposts as $post) {
+				setup_postdata($post); ?>
+				<section class="post">
+					<article class="post-img"><?php the_post_thumbnail('thumbnail'); ?></article>
+					<section class="post-txt">
+						<article class="author">
+							<?php if (get_field('avatar_author_posts')) : ?>
+								<img src="<?php the_field('avatar_author_posts'); ?>" />
+							<?php endif; ?>
+							<h4><?php the_field('name_author'); ?></h4>
+						</article>
+						<h3><?php the_title(); ?></h3> <!--<a href="<?php the_permalink(); ?>"> </a>-->
+						<article class="post-date">
+							<?php if (get_field('icons_time')) : ?>
+								<img src="<?php the_field('icons_time'); ?>" />
+							<?php endif; ?>
+							<?php echo get_the_date('j F Y'); ?>
+							|
+							<?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' read'; ?>
+						</article>
+					</section>
+				</section> <?php }
+						wp_reset_postdata(); ?>
+		</section>
+	</section>
+
+	<section class="subscribe">
+		
+		<?php echo do_shortcode('[contact-form-7 id="355" title="Contact form 1"]'); ?>
+	</section>
+
 </main><!-- #main -->
 
 <?php

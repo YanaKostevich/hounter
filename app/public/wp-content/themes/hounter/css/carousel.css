@@ -3,31 +3,43 @@ h1 {
   font: normal 600 40px/50px "Lexend", sans-serif;
   color: #1b1c57;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   color: #1b1c57;
   font: normal 600 32px/40px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
   font: normal 400 16px/28px "Lexend", sans-serif;
   color: #626687;
+  padding: 0;
+  margin: 0;
 }
 
 h4 {
   color: #888b97;
   font: normal 400 16px/32px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h5 {
   color: #1b1c57;
   font: normal 600 16px/24px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h6 {
   color: #68799f;
   font: normal 400 12px/20px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -38,17 +50,20 @@ body a {
   cursor: pointer;
 }
 
-.recommendation .small_title, .ready .small_title {
+.recommendation .small_title,
+.ready .small_title {
   font: normal 500 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
-.recommendation .small_title p, .ready .small_title p {
+.recommendation .small_title p,
+.ready .small_title p {
   position: relative;
   margin-bottom: 12px;
 }
 
-.recommendation .small_title p::after, .ready .small_title p::after {
+.recommendation .small_title p::after,
+.ready .small_title p::after {
   content: "";
   display: block;
   width: 32px;
@@ -57,6 +72,32 @@ body a {
   top: 8px;
   position: absolute;
   margin-left: -40px;
+}
+
+.see_review .small_title,
+.buying_home .small_title {
+  text-align: center;
+  font: normal 500 14px/18px "Lexend", sans-serif;
+  color: #f59e0b;
+}
+
+.see_review .small_title p,
+.buying_home .small_title p {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.see_review .small_title p::before,
+.buying_home .small_title p::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  border-top: 1px solid;
+  left: 49%;
+  top: -8px;
+  position: absolute;
+  margin: 0;
 }
 
 .slider-right-content {
@@ -305,6 +346,7 @@ body a {
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city .name {
   color: #0E1735;
   font: normal 500 18px/24px "Lexend", sans-serif;
+  padding-bottom: 4px;
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city .city {
@@ -352,5 +394,67 @@ body a {
 
 .recommendation div#carouselExampleControls {
   padding: 0;
+}
+
+.see_review .text-center.my-3 {
+  width: 100%;
+  padding-top: 34px;
+}
+
+.see_review .text-center.my-3 .carousel-item {
+  float: left;
+  margin-left: -474px;
+  width: 100%;
+  gap: 56px;
+}
+
+.see_review .text-center.my-3 .carousel-item .col-md-3 {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.see_review .text-center.my-3 .row.mx-auto.my-auto.justify-content-center {
+  height: 505px;
+}
+
+@media (min-width: 768px) {
+  .see_review .carousel-inner .carousel-item-end.active,
+  .see_review .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 0;
+  }
+  .see_review .carousel-inner .carousel-item-start.active,
+  .see_review .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .see_review .col-md-3 {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 16px;
+  }
+  .see_review .col-md-4 {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.see_review .carousel-inner .carousel-item-end,
+.see_review .carousel-inner .carousel-item-start {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 /*# sourceMappingURL=carousel.css.map */

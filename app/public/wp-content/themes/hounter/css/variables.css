@@ -3,31 +3,43 @@ h1 {
   font: normal 600 40px/50px "Lexend", sans-serif;
   color: #1b1c57;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   color: #1b1c57;
   font: normal 600 32px/40px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
   font: normal 400 16px/28px "Lexend", sans-serif;
   color: #626687;
+  padding: 0;
+  margin: 0;
 }
 
 h4 {
   color: #888b97;
   font: normal 400 16px/32px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h5 {
   color: #1b1c57;
   font: normal 600 16px/24px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h6 {
   color: #68799f;
   font: normal 400 12px/20px "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -38,17 +50,20 @@ body a {
   cursor: pointer;
 }
 
-.recommendation .small_title, .ready .small_title {
+.recommendation .small_title,
+.ready .small_title {
   font: normal 500 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
-.recommendation .small_title p, .ready .small_title p {
+.recommendation .small_title p,
+.ready .small_title p {
   position: relative;
   margin-bottom: 12px;
 }
 
-.recommendation .small_title p::after, .ready .small_title p::after {
+.recommendation .small_title p::after,
+.ready .small_title p::after {
   content: "";
   display: block;
   width: 32px;
@@ -57,5 +72,31 @@ body a {
   top: 8px;
   position: absolute;
   margin-left: -40px;
+}
+
+.see_review .small_title,
+.buying_home .small_title {
+  text-align: center;
+  font: normal 500 14px/18px "Lexend", sans-serif;
+  color: #f59e0b;
+}
+
+.see_review .small_title p,
+.buying_home .small_title p {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.see_review .small_title p::before,
+.buying_home .small_title p::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  border-top: 1px solid;
+  left: 49%;
+  top: -8px;
+  position: absolute;
+  margin: 0;
 }
 /*# sourceMappingURL=variables.css.map */

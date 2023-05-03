@@ -44,6 +44,7 @@
         }
     }
 }
+
 .carousel-1.slide.pointer-event {
     padding-right: 0;
 }
@@ -182,6 +183,7 @@
                                 .name {
                                     color: #0E1735;
                                     font: normal 500 18px/24px "Lexend", sans-serif;
+                                    padding-bottom: 4px;
                                 }
                                 .city {
                                     color: #888B97;
@@ -227,6 +229,57 @@
     }
     div#carouselExampleControls{
         padding: 0;
+    }
+    
+}
+.see_review {
+    .text-center.my-3 {
+        width: 100%;
+        padding-top: 34px;
+        .carousel-item {
+            // margin-right: 0px;
+            float: left;
+            margin-left: -474px;
+            width: 100%;
+            gap: 56px;
+            .col-md-3 {
+                width: auto;
+        display: flex;
+            }
+        }
+        .row.mx-auto.my-auto.justify-content-center {
+            height: 505px;
+        }
+    }
+    @media (min-width: 768px) {
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(-100px);
+            transition: all 1s;
+            opacity: 0;
+        }
+    
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 1s;
+        }
+        .col-md-3 {
+            width: auto;
+            display: flex;
+            padding-right: 16px;
+        }
+        .col-md-4 {
+            width: auto;
+            display: flex;
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+        opacity: 1;
     }
     
 }

@@ -1,8 +1,23 @@
+let items = document.querySelectorAll(".carousel .carousel-item");
 let items1 = document.querySelectorAll(".carousel-1 .carousel-item");
 let items2 = document.querySelectorAll(".carousel-2 .carousel-item");
-let items = document.querySelectorAll(".carousel .carousel-item");
+let items3 = document.querySelectorAll(".carousel-3 .carousel-item");
 let nextButton = document.querySelector(".carousel-control-next");
 let prevButton = document.querySelector(".carousel-control-prev");
+
+items.forEach((el) => {
+  const minPerSlide = 4;
+  let next = el.nextElementSibling;
+  for (var i = 1; i < minPerSlide; i++) {
+    if (!next) {
+      // wrap carousel by using first child
+      next = items[0];
+    }
+    let cloneChild = next.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    next = next.nextElementSibling;
+  }
+});
 
 items1.forEach((el) => {
   const minPerSlide = 3;
@@ -30,20 +45,20 @@ items2.forEach((el) => {
     next = next.nextElementSibling;
   }
 });
-
-items.forEach((el) => {
-  const minPerSlide = 4;
+items3.forEach((el) => {
+  const minPerSlide = 3;
   let next = el.nextElementSibling;
   for (var i = 1; i < minPerSlide; i++) {
     if (!next) {
       // wrap carousel by using first child
-      next = items[0];
+      next = items3[0];
     }
     let cloneChild = next.cloneNode(true);
     el.appendChild(cloneChild.children[0]);
     next = next.nextElementSibling;
   }
 });
+
 
 function addActiveClassToNextButton() {
   nextButton.classList.add("active");
