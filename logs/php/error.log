@@ -486,3 +486,39 @@ Stack trace:
 [02-May-2023 17:41:24 UTC] PHP Warning:  Array to string conversion in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php on line 987
 [03-May-2023 17:52:26 UTC] WordPress database error Server shutdown in progress for query SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1 made by include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php'), include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->load_wordpress, require('wp-settings.php'), load_default_textdomain, determine_locale, get_locale, get_option
 [03-May-2023 17:52:26 UTC] WordPress database error Server shutdown in progress for query SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1 made by include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php'), include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->do_early_invoke, WP_CLI\Runner->run_command_and_exit, WP_CLI\Runner->run_command, WP_CLI\Dispatcher\Subcommand->invoke, call_user_func, WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}, call_user_func, Eval_Command->__invoke, WP_CLI\Runner->load_wordpress, require('wp-settings.php'), load_default_textdomain, determine_locale, get_locale, get_option
+[04-May-2023 00:17:12 UTC] PHP Warning:  Undefined variable $blog_title in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 17
+[04-May-2023 01:08:23 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php:41
+Stack trace:
+#0 /Users/jane_kost/Local Sites/hounter/app/public/wp-includes/template.php(783): require_once()
+#1 /Users/jane_kost/Local Sites/hounter/app/public/wp-includes/template.php(718): load_template('/Users/jane_kos...', true, Array)
+#2 /Users/jane_kost/Local Sites/hounter/app/public/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/page-homepage.php(1455): get_footer()
+#4 /Users/jane_kost/Local Sites/hounter/app/public/wp-includes/template-loader.php(106): include('/Users/jane_kos...')
+#5 /Users/jane_kost/Local Sites/hounter/app/public/wp-blog-header.php(19): require_once('/Users/jane_kos...')
+#6 /Users/jane_kost/Local Sites/hounter/app/public/index.php(17): require('/Users/jane_kos...')
+#7 {main}
+  thrown in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 41
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 49
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 49
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 50
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 50
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 51
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 51
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 53
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 53
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 54
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 54
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 55
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 55
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 57
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 57
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 58
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 58
+[04-May-2023 13:35:43 UTC] PHP Warning:  Undefined variable $link in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 59
+[04-May-2023 13:35:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 59
+[04-May-2023 13:37:20 UTC] PHP Warning:  Undefined variable $link_url1 in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 61
+[04-May-2023 13:37:20 UTC] PHP Warning:  Undefined variable $link_target1 in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 61
+[04-May-2023 13:37:20 UTC] PHP Warning:  Undefined variable $link_title1 in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 61
+[04-May-2023 13:37:20 UTC] PHP Warning:  Undefined variable $link_url2 in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 62
+[04-May-2023 13:37:20 UTC] PHP Warning:  Undefined variable $link_target2 in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 62
+[04-May-2023 13:37:20 UTC] PHP Warning:  Undefined variable $link_title2 in /Users/jane_kost/Local Sites/hounter/app/public/wp-content/themes/hounter/footer.php on line 62

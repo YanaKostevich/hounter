@@ -1166,7 +1166,7 @@ get_header();
 											<img src="<?php the_field('photo_for_slider_left'); ?>" />
 										<?php endif; ?>
 										<div class="button">
-											<button class="btn btn-primary" data-bs-target="#exampleModalToggl5" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+											<button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
 											<button class="btn btn-primary" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
 										</div>
 									</div>
@@ -1209,7 +1209,8 @@ get_header();
 			<p><?php the_field('small_title_review'); ?></p>
 			<h2> <?php the_field('title_review'); ?></h2>
 		</article>
-		<div id="carouselExampleControls1" class="carousel-3 slide" data-bs-ride="carousel">
+		<div class="carousel-3 slide" data-bs-ride="carousel">
+
 			<div class="text-center my-3">
 				<div class="row mx-auto my-auto justify-content-center">
 					<div class="carousel-inner">
@@ -1334,13 +1335,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			</button>
+			<!-- Controls -->
 
 		</div>
 	</div>
@@ -1380,7 +1375,7 @@ get_header();
 								<img src="<?php the_field('icons_time'); ?>" />
 							<?php endif; ?>
 							<p>
-							<?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' read'; ?>
+								<?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' read'; ?>
 								|
 								<?php echo get_the_date('j F Y'); ?>
 							</p>
@@ -1451,6 +1446,7 @@ get_header();
 
 		</section>
 	</section>
+
 
 </main><!-- #main -->
 

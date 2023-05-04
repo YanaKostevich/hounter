@@ -44,6 +44,7 @@ h6 {
 
 body {
   background-color: white;
+  height: 100%;
 }
 
 body a {
@@ -121,6 +122,7 @@ body a {
 }
 
 #page main {
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -782,7 +784,7 @@ body a {
 }
 
 #page main .subscribe {
-  margin: 0 120px 120px;
+  margin: 0 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -2,6 +2,7 @@
 
 #page {
     main {
+        min-height: 100%;
         overflow: hidden;
         .hero-section {
             display: flex;
@@ -468,7 +469,7 @@
             }
         }
         .subscribe {
-            margin: 0 120px 120px;
+            margin: 0 120px;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -630,5 +631,6 @@
                 }
             }
         }
+        
     }
 }

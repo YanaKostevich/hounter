@@ -44,6 +44,7 @@ h6 {
 
 body {
   background-color: white;
+  height: 100%;
 }
 
 body a {
@@ -118,5 +119,84 @@ body a {
   top: -8px;
   position: absolute;
   margin: 0;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+footer .site-info {
+  margin: 120px;
+}
+
+footer .site-info .footer {
+  -ms-grid-columns: 2fr 0.7fr 0.7fr 1fr;
+      grid-template-columns: 2fr 0.7fr 0.7fr 1fr;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .site-info .footer .site-branding .logo_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .site-info .footer .site-branding .logo_title p {
+  font: normal 700 16px/20px "Lexend", sans-serif;
+  padding: 0 0 0 12px;
+  margin: 0;
+  text-transform: capitalize;
+  color: #1b1c57;
+}
+
+footer .site-info .footer .site-branding .description {
+  width: 65%;
+}
+
+footer .site-info .footer .site-branding .description p {
+  font: normal 200 14px/24px "Lexend", sans-serif;
+  color: #626687;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 16px;
+}
+
+footer .site-info .footer .site-branding .description .social-icons a:nth-child(2n) {
+  padding: 14px;
+}
+
+footer .site-info .footer .property h6,
+footer .site-info .footer .article h6,
+footer .site-info .footer .contact h6 {
+  font: normal 600 18px/22.5px "Lexend", sans-serif;
+  padding-bottom: 28px;
+  color: #1b1c57;
+}
+
+footer .site-info .footer .property ul,
+footer .site-info .footer .article ul,
+footer .site-info .footer .contact ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .site-info .footer .property ul li,
+footer .site-info .footer .article ul li,
+footer .site-info .footer .contact ul li {
+  list-style-type: none;
+  padding-bottom: 18px;
+}
+
+footer .site-info .footer .property ul li a,
+footer .site-info .footer .article ul li a,
+footer .site-info .footer .contact ul li a {
+  font: normal 200 14px/17.5px "Lexend", sans-serif;
+  color: #888b97;
+  text-decoration: none;
 }
 /*# sourceMappingURL=footer.css.map */

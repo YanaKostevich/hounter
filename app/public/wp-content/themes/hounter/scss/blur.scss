@@ -96,3 +96,36 @@
         background: linear-gradient(33deg, #a9fff39e 0%, #e5eaf5 41%, #7895f6 100%);
     }
 }
+
+footer {
+    overflow: hidden;
+    .site-info {
+        position: relative;
+        .blur-right-bottom {
+            position: absolute;
+            width: 438px;
+            height: 494px;
+            right: -20%;
+            top: -5%;
+
+            background: #82bbff;
+            opacity: 0.3;
+            filter: blur(60px);
+            transform: rotate(202deg);
+            border-radius: 60% 80%;
+        }
+        .blur-center-bottom {
+            position: absolute;
+            width: 438px;
+            height: 494px;
+            right: 0;
+            top: 0;
+
+            background: #b9ff82;
+            opacity: 0.3;
+            filter: blur(60px);
+            transform: rotate(99deg);
+            border-radius: 40% 70%;
+        }
+    }
+}

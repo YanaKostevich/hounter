@@ -101,4 +101,42 @@
   background: #a9fff39e;
   background: linear-gradient(33deg, #a9fff39e 0%, #e5eaf5 41%, #7895f6 100%);
 }
+
+footer {
+  overflow: hidden;
+}
+
+footer .site-info {
+  position: relative;
+}
+
+footer .site-info .blur-right-bottom {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  right: -20%;
+  top: -5%;
+  background: #82bbff;
+  opacity: 0.3;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(202deg);
+          transform: rotate(202deg);
+  border-radius: 60% 80%;
+}
+
+footer .site-info .blur-center-bottom {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  right: 0;
+  top: 0;
+  background: #b9ff82;
+  opacity: 0.3;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(99deg);
+          transform: rotate(99deg);
+  border-radius: 40% 70%;
+}
 /*# sourceMappingURL=blur.css.map */
