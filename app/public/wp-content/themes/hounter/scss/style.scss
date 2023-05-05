@@ -395,7 +395,10 @@
                                 p {
                                     margin-bottom: 16px;
                                 }
-                                .icons_text_1, .icons_text_2, .icons_text_3, .icons_text_4 {
+                                .icons_text_1,
+                                .icons_text_2,
+                                .icons_text_3,
+                                .icons_text_4 {
                                     display: flex;
                                     align-items: center;
                                     padding-bottom: 20px;
@@ -412,18 +415,21 @@
                                         }
                                     }
                                     @media (max-width: 350px) {
-                                            img{
-                                                width: 16%;
-                                            }
+                                        img {
+                                            width: 16%;
                                         }
-                                   
+                                    }
                                 }
                                 @media (max-width: 375px) {
-                                    .icons_text_1, .icons_text_4 {
+                                    .icons_text_1,
+                                    .icons_text_4 {
                                         grid-column-start: 1;
-    grid-column-end: 3;
+                                        grid-column-end: 3;
                                     }
-                                    .icons_text_1, .icons_text_2, .icons_text_3, .icons_text_4 {
+                                    .icons_text_1,
+                                    .icons_text_2,
+                                    .icons_text_3,
+                                    .icons_text_4 {
                                         padding-bottom: 0;
                                     }
                                 }
@@ -434,8 +440,8 @@
                                 justify-content: space-between;
                                 gap: 20px;
                                 flex-direction: row;
-    flex-wrap: wrap;
-                                
+                                flex-wrap: wrap;
+
                                 .info_employee {
                                     display: flex;
                                     .name_position {
@@ -482,10 +488,24 @@
                 .left {
                     height: 440px;
                     @media (max-width: 1170px) {
-
-    display: flex;
-    justify-content: flex-end;
-    height: 650px;
+                        display: flex;
+                        justify-content: flex-end;
+                        height: 650px;
+                    }
+                    @media (max-width: 540px) {
+                        height: 450px;
+                    }
+                    @media (max-width: 500px) {
+                        height: 450px;
+                    }
+                    @media (max-width: 400px) {
+                        height: 410px;
+                    }
+                    @media (max-width: 360px) {
+                        height: 380px;
+                    }
+                    @media (max-width: 330px) {
+                        height: 350px;
                     }
                     .main_img_video {
                         display: flex;
@@ -501,23 +521,45 @@
                                 }
                             }
                         }
+                        
                         @media (max-width: 1170px) {
                             height: 88%;
                             width: 100%;
-                            .img-modal{
+                            .img-modal {
                                 width: 100%;
                                 .video {
                                     height: 100%;
                                     display: flex;
-                                        width: 100%;
-                                        justify-content: flex-end;
+                                    width: 100%;
+                                    justify-content: flex-end;
                                     img {
                                         height: 90%;
                                         object-fit: cover;
+                                        @media (max-width: 940px) {
+                                            width: 85%;
+                                        }
+                                        @media (max-width: 940px) {
+                                            object-fit: contain;
+                                        }
+                                        @media (max-width: 720px) {
+                                            object-fit: cover;
+                                            width: 85%;
+                                        }
+                                        @media (max-width: 650px) {
+                                            height: 80%;
+                                        }
+                                        @media (max-width: 500px) {
+                                            height: 85%;
+                                        }
+                                        @media (max-width: 441px) {
+                                            height: 80%;
+                                        }
+                                        @media (max-width: 400px) {
+                                            height: 70%;
+                                        }
                                     }
                                 }
                             }
-                            
                         }
                         img {
                             border-radius: 4px;
@@ -535,14 +577,17 @@
                         @media (max-width: 1350px) {
                             gap: 0;
                             bottom: 5%;
-                            .img-modal, .img-modal_1{
+                            .img-modal,
+                            .img-modal_1 {
                                 display: flex;
                                 justify-content: flex-end;
-                                .video_img, .video_img_1 {
+                                .video_img,
+                                .video_img_1 {
                                     width: 90%;
                                 }
                             }
                         }
+                        
                         @media (max-width: 1170px) {
                             gap: 10px;
                             bottom: 0;
@@ -553,8 +598,11 @@
                                 width: 150px;
                                 .video_img {
                                     width: 100%;
-                                    img{
+                                    img {
                                         width: 100%;
+                                    }
+                                    @media (max-width: 650px) {
+                                        width: 95%;
                                     }
                                 }
                             }
@@ -564,11 +612,44 @@
                                 width: 400px;
                                 .video_img_1 {
                                     width: 100%;
-                                    img{
+                                    img {
                                         width: 100%;
+                                    }
+                                    @media (max-width: 650px) {
+                                        width: 95%;
                                     }
                                 }
                             }
+                        }
+                        @media (max-width: 900px) {
+                            bottom: 1%;
+                        }
+                        @media (max-width: 850px) {
+                            bottom: 4%;
+                        }
+                        @media (max-width: 810px) {
+                            bottom: 7%;
+                        }
+                        @media (max-width: 768px) {
+                            bottom: 0;
+                        }
+                        @media (max-width: 650px) {
+                            bottom: 5%;
+                        }
+                        @media (max-width: 540px) {
+                            bottom: 3%;
+                        }
+                        @media (max-width: 500px) {
+                            bottom: 0;
+                        }
+                        @media (max-width: 441px) {
+                            bottom: 1%;
+                        }
+                        @media (max-width: 400px) {
+                            bottom: 4%;
+                        }
+                        @media (max-width: 330px) {
+                            bottom: 3%;
                         }
                     }
                 }

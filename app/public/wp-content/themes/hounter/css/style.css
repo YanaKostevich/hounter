@@ -799,7 +799,10 @@ body a {
   margin-bottom: 16px;
 }
 
-#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 {
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1,
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2,
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3,
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,7 +812,10 @@ body a {
   padding-bottom: 20px;
 }
 
-#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 p {
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 p,
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 p,
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 p,
+#page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 p {
   font: normal 400 16px/20px "Lexend", sans-serif;
   color: #3c4563;
   margin: 0;
@@ -817,30 +823,43 @@ body a {
 }
 
 @media (max-width: 390px) {
-  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 p {
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 p,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 p,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 p,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 p {
     padding-left: 10px;
   }
 }
 
 @media (max-width: 373px) {
-  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 p, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 p {
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 p,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 p,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 p,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 p {
     font: normal 400 14px/20px "Lexend", sans-serif;
   }
 }
 
 @media (max-width: 350px) {
-  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 img, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 img, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 img, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 img {
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1 img,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2 img,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3 img,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 img {
     width: 16%;
   }
 }
 
 @media (max-width: 375px) {
-  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 {
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 3;
   }
-  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3, #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 {
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_1,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_2,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_3,
+  #page main .ready .body_ready_slider .right .text .detail .house_detail .icons_text_4 {
     padding-bottom: 0;
   }
 }
@@ -934,6 +953,36 @@ body a {
   }
 }
 
+@media (max-width: 540px) {
+  #page main .ready .body_ready_slider .left {
+    height: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  #page main .ready .body_ready_slider .left {
+    height: 450px;
+  }
+}
+
+@media (max-width: 400px) {
+  #page main .ready .body_ready_slider .left {
+    height: 410px;
+  }
+}
+
+@media (max-width: 360px) {
+  #page main .ready .body_ready_slider .left {
+    height: 380px;
+  }
+}
+
+@media (max-width: 330px) {
+  #page main .ready .body_ready_slider .left {
+    height: 350px;
+  }
+}
+
 #page main .ready .body_ready_slider .left .main_img_video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,6 +1032,51 @@ body a {
   }
 }
 
+@media (max-width: 1170px) and (max-width: 940px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 940px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 720px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 85%;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 650px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    height: 80%;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 500px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    height: 85%;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 441px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    height: 80%;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 400px) {
+  #page main .ready .body_ready_slider .left .main_img_video .img-modal .video img {
+    height: 70%;
+  }
+}
+
 #page main .ready .body_ready_slider .left .main_img_video img {
   border-radius: 4px;
 }
@@ -1007,7 +1101,8 @@ body a {
     gap: 0;
     bottom: 5%;
   }
-  #page main .ready .body_ready_slider .left .main_img .img-modal, #page main .ready .body_ready_slider .left .main_img .img-modal_1 {
+  #page main .ready .body_ready_slider .left .main_img .img-modal,
+  #page main .ready .body_ready_slider .left .main_img .img-modal_1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1015,7 +1110,10 @@ body a {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  #page main .ready .body_ready_slider .left .main_img .img-modal .video_img, #page main .ready .body_ready_slider .left .main_img .img-modal .video_img_1, #page main .ready .body_ready_slider .left .main_img .img-modal_1 .video_img, #page main .ready .body_ready_slider .left .main_img .img-modal_1 .video_img_1 {
+  #page main .ready .body_ready_slider .left .main_img .img-modal .video_img,
+  #page main .ready .body_ready_slider .left .main_img .img-modal .video_img_1,
+  #page main .ready .body_ready_slider .left .main_img .img-modal_1 .video_img,
+  #page main .ready .body_ready_slider .left .main_img .img-modal_1 .video_img_1 {
     width: 90%;
   }
 }
@@ -1041,6 +1139,15 @@ body a {
   #page main .ready .body_ready_slider .left .main_img .img-modal .video_img img {
     width: 100%;
   }
+}
+
+@media (max-width: 1170px) and (max-width: 650px) {
+  #page main .ready .body_ready_slider .left .main_img .img-modal .video_img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1170px) {
   #page main .ready .body_ready_slider .left .main_img .img-modal_1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1055,6 +1162,72 @@ body a {
   }
   #page main .ready .body_ready_slider .left .main_img .img-modal_1 .video_img_1 img {
     width: 100%;
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 650px) {
+  #page main .ready .body_ready_slider .left .main_img .img-modal_1 .video_img_1 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 1%;
+  }
+}
+
+@media (max-width: 850px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 4%;
+  }
+}
+
+@media (max-width: 810px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 540px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 3%;
+  }
+}
+
+@media (max-width: 500px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 441px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 1%;
+  }
+}
+
+@media (max-width: 400px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 4%;
+  }
+}
+
+@media (max-width: 330px) {
+  #page main .ready .body_ready_slider .left .main_img {
+    bottom: 3%;
   }
 }
 
