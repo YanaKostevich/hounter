@@ -131,7 +131,54 @@ body a {
   position: absolute;
   right: 0;
   top: 470px;
-  width: 47.3%;
+}
+
+@media (max-width: 1920px) {
+  .slider-right-content .text-center.my-3 {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .slider-right-content .text-center.my-3 {
+    width: 38%;
+  }
+}
+
+@media (max-width: 1650px) {
+  .slider-right-content .text-center.my-3 {
+    width: 41%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .slider-right-content .text-center.my-3 {
+    width: 44%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .slider-right-content .text-center.my-3 {
+    width: 47.3%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .slider-right-content .text-center.my-3 {
+    width: 52%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .slider-right-content .text-center.my-3 {
+    top: 550px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .slider-right-content .text-center.my-3 {
+    width: 70%;
+  }
 }
 
 .slider-right-content .text-center.my-3 .carousel.slide.pointer-event {
@@ -245,7 +292,36 @@ body a {
 
 .recommendation .text-center.my-4 .carousel-item {
   width: 100%;
-  gap: 40px;
+}
+
+@media (max-width: 1920px) {
+  .recommendation .text-center.my-4 .carousel-item {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1590px) {
+  .recommendation .text-center.my-4 .carousel-item {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .recommendation .text-center.my-4 .carousel-item {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .recommendation .text-center.my-4 .carousel-item {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .recommendation .text-center.my-4 .carousel-item {
+    gap: 40px;
+  }
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body {
@@ -268,12 +344,38 @@ body a {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img {
+    width: 100%;
+  }
+}
+
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img img {
   border-radius: 24px;
+}
+
+@media (max-width: 767px) {
+  .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .img img {
+    width: 80%;
+  }
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute {
@@ -289,6 +391,18 @@ body a {
   background: #fee2e2;
   padding: 8px 16px;
   border-radius: 32px;
+}
+
+@media (max-width: 767px) {
+  .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute {
+    left: 72px;
+  }
+}
+
+@media (max-width: 550px) {
+  .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute {
+    left: 16px;
+  }
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .icons {
@@ -408,6 +522,13 @@ body a {
   padding: 17.83px 25.33px 17.83px 26.5px;
 }
 
+@media (max-width: 1234px) {
+  .recommendation .carousel-control-next,
+  .recommendation .carousel-control-prev {
+    padding: 25px 25.33px 25px 26.5px;
+  }
+}
+
 .recommendation .carousel-control-next-icon,
 .recommendation .carousel-control-prev-icon {
   width: 1rem;
@@ -420,6 +541,28 @@ body a {
 .see_review .text-center.my-3 {
   width: 100%;
   padding-top: 34px;
+  position: relative;
+}
+
+.see_review .text-center.my-3 .carousel-indicators {
+  left: auto;
+  right: auto;
+  bottom: -32px;
+  margin-bottom: 0;
+}
+
+.see_review .text-center.my-3 .carousel-indicators [data-bs-target].active {
+  background-color: #3C4563;
+}
+
+.see_review .text-center.my-3 .carousel-indicators [data-bs-target] {
+  background-color: #E0E3EB;
+}
+
+.see_review .text-center.my-3 .carousel-indicators > li {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
 }
 
 .see_review .text-center.my-3 .carousel-item {
@@ -472,10 +615,47 @@ body a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1300px) {
+  .see_review .col-md-4 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1060px) {
+  .see_review .col-md-4 {
+    width: 35%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .see_review .col-md-4 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .see_review .col-md-4 {
+    width: 50%;
+  }
+}
+
 .see_review .carousel-inner .carousel-item-end,
 .see_review .carousel-inner .carousel-item-start {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+    width: 85%;
+  }
+}
+
+@media (max-width: 604px) {
+  .carousel-inner .carousel-item > div:first-child {
+    width: 91%;
+  }
 }
 /*# sourceMappingURL=carousel.css.map */

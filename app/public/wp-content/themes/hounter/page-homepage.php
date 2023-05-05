@@ -6,6 +6,8 @@ get_header();
 
 	<section class="hero-section">
 		<section class="left-content">
+			<article class="blur"></article>
+			<article class="blur1"></article>
 			<h1> <?php the_field('title'); ?></h1>
 			<h3> <?php the_field('subtitle'); ?></h3>
 			<section class="search-box">
@@ -904,7 +906,7 @@ get_header();
 		</article>
 		<article class="blur-right-top"></article>
 		<article class="blur-right-bottom"></article>
-		<div class="carousel-2 slide" data-bs-ride="carousel">
+		<div class="carousel-2 slide" data-bs-ride="">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="body_ready_slider">
@@ -915,28 +917,28 @@ get_header();
 								<section class="detail">
 									<p><?php the_field('house_detail_title'); ?></p>
 									<section class="house_detail">
-										<section class="icons_text">
+										<section class="icons_text_1">
 											<?php if (get_field('house_detail_icons')) : ?>
 												<img src="<?php the_field('house_detail_icons'); ?>" />
 											<?php endif; ?>
 											<p><?php the_field('house_detail_text'); ?></p>
 										</section>
 
-										<section class="icons_text">
+										<section class="icons_text_2">
 											<?php if (get_field('house_detail_icons_1')) : ?>
 												<img src="<?php the_field('house_detail_icons_1'); ?>" />
 											<?php endif; ?>
 											<p><?php the_field('house_detail_text_1'); ?></p>
 										</section>
 
-										<section class="icons_text">
+										<section class="icons_text_3">
 											<?php if (get_field('house_detail_icons_2')) : ?>
 												<img src="<?php the_field('house_detail_icons_2'); ?>" />
 											<?php endif; ?>
 											<p><?php the_field('house_detail_text_2'); ?></p>
 										</section>
 
-										<section class="icons_text">
+										<section class="icons_text_4">
 											<?php if (get_field('house_detail_icons_3')) : ?>
 												<img src="<?php the_field('house_detail_icons_3'); ?>" />
 											<?php endif; ?>
@@ -968,40 +970,47 @@ get_header();
 							</section>
 						</section>
 						<section class="left">
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
-								<div class="video">
-									<?php if (get_field('left_slider_img')) : ?>
-										<img src="<?php the_field('left_slider_img'); ?>" />
-									<?php endif; ?>
-								</div>
-							</section>
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle2" role="button">
-								<div class="video">
-									<div class="gallery-img">
-										<?php if (get_field('photo_for_slider_left')) : ?>
-											<img src="<?php the_field('photo_for_slider_left'); ?>" />
+							<section class="main_img_video">
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+									<div class="video">
+										<?php if (get_field('left_slider_img')) : ?>
+											<img src="<?php the_field('left_slider_img'); ?>" />
 										<?php endif; ?>
 									</div>
-								</div>
+								</section>
 							</section>
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle3" role="button">
-								<div class="video">
-									<div class="gallery-img-1">
-										<?php if (get_field('photo_for_slider_left_1')) : ?>
-											<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
-										<?php endif; ?>
+							<section class="main_img">
+								<section class="img-modal_1" data-bs-toggle="modal" href="#exampleModalToggle2" role="button">
+									<div class="video_img_1">
+										<div class="gallery-img">
+											<?php if (get_field('photo_for_slider_left')) : ?>
+												<img src="<?php the_field('photo_for_slider_left'); ?>" />
+											<?php endif; ?>
+										</div>
 									</div>
-								</div>
-							</section>
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle4" role="button">
-								<div class="video">
-									<div class="gallery-img-2">
-										<?php if (get_field('photo_for_slider_left_2')) : ?>
-											<img src="<?php the_field('photo_for_slider_left_2'); ?>" />
-										<?php endif; ?>
+								</section>
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle3" role="button">
+									<div class="video_img">
+										<div class="gallery-img-1">
+											<?php if (get_field('photo_for_slider_left_1')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
+											<?php endif; ?>
+										</div>
 									</div>
-								</div>
+								</section>
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle4" role="button">
+									<div class="video_img">
+										<div class="gallery-img-2">
+											<?php if (get_field('photo_for_slider_left_2')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_2'); ?>" />
+											<?php endif; ?>
+										</div>
+									</div>
+								</section>
 							</section>
+
+
+
 							<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
 								<div class="modal-dialog modal-dialog-centered">
 									<div class="modal-content" id="exampleModalToggleLabel">
@@ -1062,28 +1071,28 @@ get_header();
 								<section class="detail">
 									<p><?php the_field('house_detail_title'); ?></p>
 									<section class="house_detail">
-										<section class="icons_text">
+										<section class="icons_text_1">
 											<?php if (get_field('house_detail_icons')) : ?>
 												<img src="<?php the_field('house_detail_icons'); ?>" />
 											<?php endif; ?>
 											<p><?php the_field('house_detail_text'); ?></p>
 										</section>
 
-										<section class="icons_text">
+										<section class="icons_text_2">
 											<?php if (get_field('house_detail_icons_1')) : ?>
 												<img src="<?php the_field('house_detail_icons_1'); ?>" />
 											<?php endif; ?>
 											<p><?php the_field('house_detail_text_1'); ?></p>
 										</section>
 
-										<section class="icons_text">
+										<section class="icons_text_3">
 											<?php if (get_field('house_detail_icons_2')) : ?>
 												<img src="<?php the_field('house_detail_icons_2'); ?>" />
 											<?php endif; ?>
 											<p><?php the_field('house_detail_text_2'); ?></p>
 										</section>
 
-										<section class="icons_text">
+										<section class="icons_text_4">
 											<?php if (get_field('house_detail_icons_3')) : ?>
 												<img src="<?php the_field('house_detail_icons_3'); ?>" />
 											<?php endif; ?>
@@ -1115,87 +1124,90 @@ get_header();
 							</section>
 						</section>
 						<section class="left">
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle5" role="button">
-								<div class="video">
-									<?php if (get_field('left_slider_img')) : ?>
-										<img src="<?php the_field('left_slider_img'); ?>" />
-									<?php endif; ?>
-								</div>
-							</section>
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle6" role="button">
-								<div class="video">
-									<div class="gallery-img">
-										<?php if (get_field('photo_for_slider_left')) : ?>
-											<img src="<?php the_field('photo_for_slider_left'); ?>" />
+							<section class="main_img_video">
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle5" role="button">
+									<div class="video">
+										<?php if (get_field('left_slider_img')) : ?>
+											<img src="<?php the_field('left_slider_img'); ?>" />
 										<?php endif; ?>
 									</div>
-								</div>
+								</section>
 							</section>
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle7" role="button">
-								<div class="video">
-									<div class="gallery-img-1">
-										<?php if (get_field('photo_for_slider_left_1')) : ?>
-											<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
-										<?php endif; ?>
-									</div>
-								</div>
-							</section>
-							<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle8" role="button">
-								<div class="video">
-									<div class="gallery-img-2">
-										<?php if (get_field('photo_for_slider_left_2')) : ?>
-											<img src="<?php the_field('photo_for_slider_left_2'); ?>" />
-										<?php endif; ?>
-									</div>
-								</div>
-							</section>
-							<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-								<div class="modal-dialog modal-dialog-centered">
-									<div class="modal-content" id="exampleModalToggleLabel">
-										<div class="embed-container">
-											<?php the_field('video_left'); ?>
+							<section class="main_img">
+								<section class="img-modal_1" data-bs-toggle="modal" href="#exampleModalToggle6" role="button">
+									<div class="video_img_1">
+										<div class="gallery-img">
+											<?php if (get_field('photo_for_slider_left')) : ?>
+												<img src="<?php the_field('photo_for_slider_left'); ?>" />
+											<?php endif; ?>
 										</div>
-										<button class="btn btn-primary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
 									</div>
-								</div>
-							</div>
-							<div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-								<div class="modal-dialog modal-dialog-centered">
-									<div class="modal-content" id="exampleModalToggleLabel2">
-										<?php if (get_field('photo_for_slider_left')) : ?>
-											<img src="<?php the_field('photo_for_slider_left'); ?>" />
-										<?php endif; ?>
-										<div class="button">
-											<button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
-											<button class="btn btn-primary" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+								</section>
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle7" role="button">
+									<div class="video_img">
+										<div class="gallery-img-1">
+											<?php if (get_field('photo_for_slider_left_1')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
+											<?php endif; ?>
+										</div>
+									</div>
+								</section>
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle8" role="button">
+									<div class="video_img">
+										<div class="gallery-img-2">
+											<?php if (get_field('photo_for_slider_left_2')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_2'); ?>" />
+											<?php endif; ?>
+										</div>
+									</div>
+								</section>
+								<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content" id="exampleModalToggleLabel">
+											<div class="embed-container">
+												<?php the_field('video_left'); ?>
+											</div>
+											<button class="btn btn-primary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-								<div class="modal-dialog modal-dialog-centered">
-									<div class="modal-content" id="exampleModalToggleLabel2">
-										<?php if (get_field('photo_for_slider_left_1')) : ?>
-											<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
-										<?php endif; ?>
-										<div class="button">
-											<button class="btn btn-primary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
-											<button class="btn btn-primary" data-bs-target="#exampleModalToggle8" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+								<div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content" id="exampleModalToggleLabel2">
+											<?php if (get_field('photo_for_slider_left')) : ?>
+												<img src="<?php the_field('photo_for_slider_left'); ?>" />
+											<?php endif; ?>
+											<div class="button">
+												<button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+												<button class="btn btn-primary" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="modal fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-								<div class="modal-dialog modal-dialog-centered">
-									<div class="modal-content" id="exampleModalToggleLabel2">
-										<?php if (get_field('photo_for_slider_left_2')) : ?>
-											<img src="<?php the_field('photo_for_slider_left_2'); ?>" />
-										<?php endif; ?>
-										<button class="btn btn-primary" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+								<div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content" id="exampleModalToggleLabel2">
+											<?php if (get_field('photo_for_slider_left_1')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
+											<?php endif; ?>
+											<div class="button">
+												<button class="btn btn-primary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+												<button class="btn btn-primary" data-bs-target="#exampleModalToggle8" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-
+								<div class="modal fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content" id="exampleModalToggleLabel2">
+											<?php if (get_field('photo_for_slider_left_2')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_2'); ?>" />
+											<?php endif; ?>
+											<button class="btn btn-primary" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+										</div>
+									</div>
+								</div>
+							</section>
 						</section>
 					</div>
 
@@ -1213,6 +1225,11 @@ get_header();
 
 			<div class="text-center my-3">
 				<div class="row mx-auto my-auto justify-content-center">
+					<ol class="carousel-indicators">
+						<li data-bs-target=".carousel-3" data-bs-slide-to="0" class="active" onclick="carouselSlide(0)"></li>
+						<li data-bs-target=".carousel-3" data-bs-slide-to="1" onclick="carouselSlide(1)"></li>
+						<li data-bs-target=".carousel-3" data-bs-slide-to="2" onclick="carouselSlide(2)"></li>
+					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<div class="col-md-3">
@@ -1447,6 +1464,34 @@ get_header();
 		</section>
 	</section>
 
+	<!-- <div id="carousel-example-generic" class="carousel slide"> -->
+	<!-- Indicators -->
+	<!-- <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol> -->
+
+	<!-- Wrapper for slides -->
+	<!-- <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="https://unsplash.it/1400/600/?random">
+    </div>
+    <div class="item">
+      <img src="https://unsplash.it/1401/600/?random">
+    </div>
+    <div class="item">
+      <img src="https://unsplash.it/1400/601/?random">
+    </div>
+    <div class="item">
+      <img src="https://unsplash.it/1401/601/?random">
+    </div>Í
+  </div> -->
+
+	<!-- Controls -->
+
+	</div>
 
 </main><!-- #main -->
 

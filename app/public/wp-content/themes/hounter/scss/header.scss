@@ -5,6 +5,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (max-width: 604px){
+        margin: 40px 100px 0;
+        
+    }
     .main-navigation ul ul a {
         width: 170px;
     }
@@ -26,6 +32,10 @@ header {
             align-items: center;
             list-style: none;
             gap: 24px;
+            @media (max-width: 500px){
+                flex-direction: row;
+            flex-wrap: wrap;
+        }
             li {
                 transition: 0.5s;
                 a {
@@ -107,6 +117,9 @@ header {
                 background-color: #d1fae5;
                 border-radius: 32px;
                 margin-left: 56px;
+                @media (max-width: 604px){
+                    margin-left: 0;
+                }
                 a {
                     font: $menu;
                     color: #047857;

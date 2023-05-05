@@ -72,3 +72,24 @@ prevButton.addEventListener("click", () => {
   prevButton.classList.add("active");
   nextButton.classList.remove("active");
 });
+
+
+function carouselSlide(slideIndex) {
+  var indicators = document.querySelectorAll(".carousel-indicators li");
+  var slides = document.querySelectorAll(".carousel-3 .carousel-item");
+
+  for (var i = 0; i < indicators.length; i++) {
+    indicators[i].classList.remove("active");
+    slides[i].classList.remove("active");
+  }
+
+  indicators[slideIndex].classList.add("active");
+  slides[slideIndex].classList.add("active");
+  
+}
+
+
+
+
+
+

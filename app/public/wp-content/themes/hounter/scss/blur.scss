@@ -11,8 +11,58 @@
     top: -252px;
     left: -160px;
     border-radius: 100%;
+    @media (max-width: 1250px) {
+        display: none;
+    }
 }
-
+.left-content {
+    position: relative;
+    .blur {
+        display: none;
+        @media (max-width: 1250px) {
+            display: block;
+            width: 640px;
+            height: 300px;
+            position: absolute;
+            z-index: -1;
+            background: -webkit-gradient(linear, left bottom, right top, from(#f4fffc), to(#dbffed9e));
+            background: linear-gradient(to right top, #f4fffc, #dbffed9e);
+            -webkit-filter: blur(60px);
+            filter: blur(60px);
+            -webkit-transform: rotate(164deg);
+            transform: rotate(7deg);
+            top: 12%;
+            left: -3%;
+            border-radius: 40% 30%;
+        }
+        @media (max-width: 1050px) {
+    transform: rotate(358deg);
+        }
+    }
+    .blur1 {
+        display: none;
+        @media (max-width: 1250px) {
+            display: block;
+            position: absolute;
+            width: 438px;
+            height: 494px;
+            left: -20%;
+            top: 30%;
+            z-index: -1;
+            background: #f9ff82fa;
+            opacity: 0.4;
+            -webkit-filter: blur(60px);
+            filter: blur(50px);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(106deg);
+            border-radius: 20% 50%;
+        }
+        @media (max-width: 1050px) {
+            left: 0;
+            border-radius: 10% 70%;
+        }
+    }
+}
 .ready {
     .blur-right-top {
         position: absolute;
