@@ -59,7 +59,6 @@ items3.forEach((el) => {
   }
 });
 
-
 function addActiveClassToNextButton() {
   nextButton.classList.add("active");
   prevButton.classList.remove("active");
@@ -73,7 +72,6 @@ prevButton.addEventListener("click", () => {
   nextButton.classList.remove("active");
 });
 
-
 function carouselSlide(slideIndex) {
   var indicators = document.querySelectorAll(".carousel-indicators li");
   var slides = document.querySelectorAll(".carousel-3 .carousel-item");
@@ -85,10 +83,4 @@ function carouselSlide(slideIndex) {
 
   indicators[slideIndex].classList.add("active");
   slides[slideIndex].classList.add("active");
-  
 }
-
-
-
-
-

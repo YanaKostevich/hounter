@@ -32,6 +32,16 @@
         @media (max-width: 1050px) {
             width: 70%;
         }
+        @media (max-width: 561px) {
+            top: 650px;
+        }
+        @media (max-width: 448px) {
+            top: 720px;
+        }
+        @media (max-width: 362px) {
+            // top: 740px;
+            width: 80%;
+        }
         .carousel.slide.pointer-event {
             padding-right: 0;
         }
@@ -444,14 +454,13 @@
     }
     @media (max-width: 767px) {
         .carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: -webkit-box;
-    // display: flex;
-    // justify-content: flex-end;
-}
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: -webkit-box;
+            // display: flex;
+            // justify-content: flex-end;
+        }
     }
-    
 }
 
 .carousel-inner .carousel-item > div:first-child {

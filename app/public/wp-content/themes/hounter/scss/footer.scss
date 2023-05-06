@@ -78,19 +78,19 @@ footer {
             @media (max-width: 1000px) {
                 grid-template-columns: 2fr 2fr;
                 gap: 80px;
-                .contact{
+                .contact {
                     grid-column-start: 2;
                     grid-row-start: 1;
                 }
             }
             @media (max-width: 500px) {
                 gap: 50px;
-                .site-branding{
+                .site-branding {
                     grid-column-start: 1;
                     grid-column-end: 4;
                     grid-row-start: 1;
                 }
-                .contact{
+                .contact {
                     grid-column-start: 1;
                     grid-column-end: 4;
                     grid-row-start: 2;

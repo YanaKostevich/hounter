@@ -170,6 +170,24 @@ body a {
   }
 }
 
+@media (max-width: 561px) {
+  .slider-right-content .text-center.my-3 {
+    top: 650px;
+  }
+}
+
+@media (max-width: 448px) {
+  .slider-right-content .text-center.my-3 {
+    top: 720px;
+  }
+}
+
+@media (max-width: 362px) {
+  .slider-right-content .text-center.my-3 {
+    width: 80%;
+  }
+}
+
 .slider-right-content .text-center.my-3 .carousel.slide.pointer-event {
   padding-right: 0;
 }
