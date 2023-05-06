@@ -1,3 +1,0 @@
-May 05 2023 02:34:04
-{"Number":8192,"Message":"base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated","File":"\/Users\/jane_kost\/Local Sites\/hounter\/app\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/export\/class-ai1wm-export-config.php","Line":171}
-
