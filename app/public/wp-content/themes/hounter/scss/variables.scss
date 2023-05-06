@@ -82,47 +82,29 @@ body {
     }
   }
 }
-.see_review{
+.see_review,
+.buying_home {
   .small_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     font: $small-font;
     color: $yellow;
+    .line {
+      width: 32px;
+      border-top: 1px solid;
+      padding-bottom: 8px;
+    }
     p {
-      position: relative;
       margin-bottom: 12px;
-      &::before {
-        content: "";
-        display: block;
-        width: 32px;
-        height: 1px;
-        border-top: 1px solid;
-        left: 48.9%;
-        top: -8px;
-        position: absolute;
-        margin: 0;
-      }
     }
   }
 }
-.buying_home {
-  .small_title {
-    text-align: center;
-    font: $small-font;
-    color: $yellow;
-    p {
-      position: relative;
-      margin-bottom: 12px;
-      &::before {
-        content: "";
-        display: block;
-        width: 32px;
-        height: 1px;
-        border-top: 1px solid;
-        left: 44%;
-        top: -8px;
-        position: absolute;
-        margin: 0;
-      }
+@media (max-width: 500px) {
+  .see_review{
+    .small_title{
+      padding: 0 20px;
     }
   }
 }

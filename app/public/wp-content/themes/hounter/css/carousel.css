@@ -75,50 +75,39 @@ body a {
   margin-left: -40px;
 }
 
-.see_review .small_title {
-  text-align: center;
-  font: normal 300 14px/18px "Lexend", sans-serif;
-  color: #f59e0b;
-}
-
-.see_review .small_title p {
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.see_review .small_title p::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 1px;
-  border-top: 1px solid;
-  left: 48.9%;
-  top: -8px;
-  position: absolute;
-  margin: 0;
-}
-
+.see_review .small_title,
 .buying_home .small_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
+.see_review .small_title .line,
+.buying_home .small_title .line {
+  width: 32px;
+  border-top: 1px solid;
+  padding-bottom: 8px;
+}
+
+.see_review .small_title p,
 .buying_home .small_title p {
-  position: relative;
   margin-bottom: 12px;
 }
 
-.buying_home .small_title p::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 1px;
-  border-top: 1px solid;
-  left: 44%;
-  top: -8px;
-  position: absolute;
-  margin: 0;
+@media (max-width: 500px) {
+  .see_review .small_title {
+    padding: 0 20px;
+  }
 }
 
 .slider-right-content {
@@ -437,7 +426,7 @@ body a {
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .body-img .text_absolute .text_wood {
   padding-left: 12px;
-  color: #1D4ED8;
+  color: #1d4ed8;
   font: normal 500 14px/18px "Lexend", sans-serif;
 }
 
@@ -456,12 +445,12 @@ body a {
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .title_price .title {
   font: normal 400 24px/32px "Lexend", sans-serif;
-  color: #0E1735;
+  color: #0e1735;
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .title_price .price {
   font: normal 400 20px/32px "Lexend", sans-serif;
-  color: #3C4563;
+  color: #3c4563;
   margin-bottom: 0;
 }
 
@@ -479,13 +468,13 @@ body a {
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city .name {
-  color: #0E1735;
+  color: #0e1735;
   font: normal 400 18px/24px "Lexend", sans-serif;
   padding-bottom: 4px;
 }
 
 .recommendation .text-center.my-4 .carousel-item .col-md-4 .body .card-img .person .name_city .city {
-  color: #888B97;
+  color: #888b97;
   font: normal 300 14px/22px "Lexend", sans-serif;
 }
 
@@ -552,11 +541,11 @@ body a {
 }
 
 .see_review .text-center.my-3 .carousel-indicators [data-bs-target].active {
-  background-color: #3C4563;
+  background-color: #3c4563;
 }
 
 .see_review .text-center.my-3 .carousel-indicators [data-bs-target] {
-  background-color: #E0E3EB;
+  background-color: #e0e3eb;
 }
 
 .see_review .text-center.my-3 .carousel-indicators > li {
@@ -567,9 +556,112 @@ body a {
 
 .see_review .text-center.my-3 .carousel-item {
   float: left;
-  margin-left: -474px;
   width: 100%;
   gap: 56px;
+}
+
+@media (max-width: 1920px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -237px;
+  }
+}
+
+@media (max-width: 1850px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -270px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -290px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -320px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -375px;
+  }
+}
+
+@media (max-width: 1575px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -405px;
+  }
+}
+
+@media (max-width: 1520px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -435px;
+  }
+}
+
+@media (max-width: 1480px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -455px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -474px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -500px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -520px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -544px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -360px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .see_review .text-center.my-3 .carousel-item {
+    gap: 0;
+    margin-left: -271px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -246px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: -244px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .see_review .text-center.my-3 .carousel-item {
+    margin-left: 0;
+    gap: 20px;
+  }
 }
 
 .see_review .text-center.my-3 .carousel-item .col-md-3 {
@@ -579,8 +671,44 @@ body a {
   display: flex;
 }
 
+@media (max-width: 1250px) {
+  .see_review .text-center.my-3 .carousel-item .col-md-3 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .see_review .text-center.my-3 .carousel-item .col-md-3 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .see_review .text-center.my-3 .carousel-item .col-md-3 {
+    width: 100%;
+  }
+}
+
 .see_review .text-center.my-3 .row.mx-auto.my-auto.justify-content-center {
   height: 505px;
+}
+
+@media (max-width: 1250px) {
+  .see_review .text-center.my-3 .row.mx-auto.my-auto.justify-content-center {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .see_review .text-center.my-3 .row.mx-auto.my-auto.justify-content-center {
+    height: 505px;
+  }
+}
+
+@media (max-width: 500px) {
+  .see_review .text-center.my-3 .row.mx-auto.my-auto.justify-content-center {
+    height: 480px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -644,6 +772,14 @@ body a {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .see_review .carousel-inner .carousel-item.active,
+  .see_review .carousel-inner .carousel-item-next,
+  .see_review .carousel-inner .carousel-item-prev {
+    display: -webkit-box;
+  }
 }
 
 @media (max-width: 767px) {

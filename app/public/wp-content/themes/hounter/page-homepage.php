@@ -906,7 +906,7 @@ get_header();
 		</article>
 		<article class="blur-right-top"></article>
 		<article class="blur-right-bottom"></article>
-		<div class="carousel-2 slide" data-bs-ride="">
+		<div class="carousel-2 slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="body_ready_slider">
@@ -1143,15 +1143,6 @@ get_header();
 										</div>
 									</div>
 								</section>
-								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle7" role="button">
-									<div class="video_img">
-										<div class="gallery-img-1">
-											<?php if (get_field('photo_for_slider_left_1')) : ?>
-												<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
-											<?php endif; ?>
-										</div>
-									</div>
-								</section>
 								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle8" role="button">
 									<div class="video_img">
 										<div class="gallery-img-2">
@@ -1161,6 +1152,16 @@ get_header();
 										</div>
 									</div>
 								</section>
+								<section class="img-modal" data-bs-toggle="modal" href="#exampleModalToggle7" role="button">
+									<div class="video_img">
+										<div class="gallery-img-1">
+											<?php if (get_field('photo_for_slider_left_1')) : ?>
+												<img src="<?php the_field('photo_for_slider_left_1'); ?>" />
+											<?php endif; ?>
+										</div>
+									</div>
+								</section>
+
 								<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content" id="exampleModalToggleLabel">
@@ -1218,6 +1219,7 @@ get_header();
 
 	<div class="see_review">
 		<article class="small_title">
+			<article class="line"></article>
 			<p><?php the_field('small_title_review'); ?></p>
 			<h2> <?php the_field('title_review'); ?></h2>
 		</article>
@@ -1361,6 +1363,7 @@ get_header();
 		<article class="blur-left-top"></article>
 		<article class="blur-left-bottom"></article>
 		<article class="small_title">
+			<article class="line"></article>
 			<p><?php the_field('small_title_partnership'); ?></p>
 			<h2> <?php the_field('title_partnership'); ?></h2>
 			<button class="btn-more-article">

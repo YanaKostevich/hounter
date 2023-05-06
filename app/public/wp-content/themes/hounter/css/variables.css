@@ -75,49 +75,38 @@ body a {
   margin-left: -40px;
 }
 
-.see_review .small_title {
-  text-align: center;
-  font: normal 300 14px/18px "Lexend", sans-serif;
-  color: #f59e0b;
-}
-
-.see_review .small_title p {
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.see_review .small_title p::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 1px;
-  border-top: 1px solid;
-  left: 48.9%;
-  top: -8px;
-  position: absolute;
-  margin: 0;
-}
-
+.see_review .small_title,
 .buying_home .small_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
+.see_review .small_title .line,
+.buying_home .small_title .line {
+  width: 32px;
+  border-top: 1px solid;
+  padding-bottom: 8px;
+}
+
+.see_review .small_title p,
 .buying_home .small_title p {
-  position: relative;
   margin-bottom: 12px;
 }
 
-.buying_home .small_title p::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 1px;
-  border-top: 1px solid;
-  left: 44%;
-  top: -8px;
-  position: absolute;
-  margin: 0;
+@media (max-width: 500px) {
+  .see_review .small_title {
+    padding: 0 20px;
+  }
 }
 /*# sourceMappingURL=variables.css.map */

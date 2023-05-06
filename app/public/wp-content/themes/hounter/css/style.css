@@ -75,50 +75,39 @@ body a {
   margin-left: -40px;
 }
 
-.see_review .small_title {
-  text-align: center;
-  font: normal 300 14px/18px "Lexend", sans-serif;
-  color: #f59e0b;
-}
-
-.see_review .small_title p {
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.see_review .small_title p::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 1px;
-  border-top: 1px solid;
-  left: 48.9%;
-  top: -8px;
-  position: absolute;
-  margin: 0;
-}
-
+.see_review .small_title,
 .buying_home .small_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font: normal 300 14px/18px "Lexend", sans-serif;
   color: #f59e0b;
 }
 
+.see_review .small_title .line,
+.buying_home .small_title .line {
+  width: 32px;
+  border-top: 1px solid;
+  padding-bottom: 8px;
+}
+
+.see_review .small_title p,
 .buying_home .small_title p {
-  position: relative;
   margin-bottom: 12px;
 }
 
-.buying_home .small_title p::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 1px;
-  border-top: 1px solid;
-  left: 44%;
-  top: -8px;
-  position: absolute;
-  margin: 0;
+@media (max-width: 500px) {
+  .see_review .small_title {
+    padding: 0 20px;
+  }
 }
 
 #page main {
@@ -1236,6 +1225,12 @@ body a {
   width: 100%;
 }
 
+@media (max-width: 1250px) {
+  #page main .see_review .body_review_slider {
+    width: auto;
+  }
+}
+
 #page main .see_review .body_review_slider .content_slider_img img {
   opacity: 0.7;
   border-radius: 8px;
@@ -1252,9 +1247,104 @@ body a {
   border-radius: 16px;
 }
 
+@media (max-width: 1250px) {
+  #page main .see_review .body_review_slider .content_slider {
+    left: 30px;
+    right: 30px;
+    top: 230px;
+    height: 90%;
+  }
+}
+
+@media (max-width: 1235px) {
+  #page main .see_review .body_review_slider .content_slider {
+    height: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #page main .see_review .body_review_slider .content_slider {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1150px) {
+  #page main .see_review .body_review_slider .content_slider {
+    top: 180px;
+  }
+}
+
+@media (max-width: 1079px) {
+  #page main .see_review .body_review_slider .content_slider {
+    height: 105%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #page main .see_review .body_review_slider .content_slider {
+    left: 10px;
+    right: 10px;
+    height: 110%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #page main .see_review .body_review_slider .content_slider {
+    left: 30px;
+    right: 30px;
+    top: 230px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+@media (max-width: 900px) {
+  #page main .see_review .body_review_slider .content_slider {
+    top: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  #page main .see_review .body_review_slider .content_slider {
+    top: 170px;
+  }
+}
+
+@media (max-width: 500px) {
+  #page main .see_review .body_review_slider .content_slider {
+    top: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  #page main .see_review .body_review_slider .content_slider {
+    left: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  #page main .see_review .body_review_slider .content_slider {
+    top: 120px;
+  }
+}
+
+@media (max-width: 330px) {
+  #page main .see_review .body_review_slider .content_slider {
+    top: 100px;
+  }
+}
+
 #page main .see_review .body_review_slider .content_slider .text {
   padding: 32px;
   text-align: left;
+}
+
+@media (max-width: 1150px) {
+  #page main .see_review .body_review_slider .content_slider .text {
+    padding: 20px;
+  }
 }
 
 #page main .see_review .body_review_slider .content_slider .text h4 {
@@ -1263,11 +1353,23 @@ body a {
   padding-bottom: 16px;
 }
 
+@media (max-width: 425px) {
+  #page main .see_review .body_review_slider .content_slider .text h4 {
+    font: normal 500 18px/25px "Lexend", sans-serif;
+  }
+}
+
 #page main .see_review .body_review_slider .content_slider .text p {
   font: normal 200 14px/24px "Lexend", sans-serif;
   color: #626687;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 425px) {
+  #page main .see_review .body_review_slider .content_slider .text p {
+    font: normal 300 12px/24px "Lexend", sans-serif;
+  }
 }
 
 #page main .see_review .body_review_slider .content_slider .text .employee {
@@ -1390,6 +1492,7 @@ body a {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
