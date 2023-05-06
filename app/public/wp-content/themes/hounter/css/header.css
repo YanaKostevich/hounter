@@ -313,4 +313,44 @@ header #site-navigation ul .menu_button a:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+.navbar-toggler .navbar-toggler-icon .fa-bars {
+  color: #000;
+  font-size: 24px;
+}
+
+.navbar-toggler .navbar-close-icon .fa-times {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-close-icon {
+  display: inline-block;
+}
+
+.navbar-toggler[aria-expanded="false"] .navbar-toggler-icon {
+  display: inline-block;
+}
+
+.navbar-toggler[aria-expanded="false"] .navbar-close-icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
 /*# sourceMappingURL=header.css.map */

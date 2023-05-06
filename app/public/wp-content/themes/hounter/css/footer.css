@@ -119,11 +119,31 @@ footer .site-info {
   margin: 120px;
 }
 
+@media (max-width: 850px) {
+  footer .site-info {
+    margin: 120px 50px;
+  }
+}
+
+@media (max-width: 604px) {
+  footer .site-info {
+    margin: 100px 50px;
+  }
+}
+
+@media (max-width: 372px) {
+  footer .site-info {
+    margin: 100px 20px;
+  }
+}
+
 footer .site-info .footer {
-  -ms-grid-columns: 2fr 0.7fr 0.7fr 1fr;
-      grid-template-columns: 2fr 0.7fr 0.7fr 1fr;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 2fr 0.7fr 0.7fr 1fr;
+      grid-template-columns: 2fr 0.7fr 0.7fr 1fr;
+  gap: 50px;
+  position: relative;
 }
 
 footer .site-info .footer .site-branding .logo_title {
@@ -147,6 +167,12 @@ footer .site-info .footer .site-branding .description {
   width: 65%;
 }
 
+@media (max-width: 1000px) {
+  footer .site-info .footer .site-branding .description {
+    width: 100%;
+  }
+}
+
 footer .site-info .footer .site-branding .description p {
   font: normal 200 14px/24px "Lexend", sans-serif;
   color: #626687;
@@ -157,6 +183,12 @@ footer .site-info .footer .site-branding .description p {
 
 footer .site-info .footer .site-branding .description .social-icons a:nth-child(2n) {
   padding: 14px;
+}
+
+footer .site-info .footer .property,
+footer .site-info .footer .article,
+footer .site-info .footer .contact {
+  position: relative;
 }
 
 footer .site-info .footer .property h6,
@@ -187,5 +219,46 @@ footer .site-info .footer .contact ul li a {
   font: normal 200 14px/17.5px "Lexend", sans-serif;
   color: #888b97;
   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  footer .site-info .footer {
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    gap: 80px;
+  }
+  footer .site-info .footer .contact {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .site-info .footer {
+    gap: 50px;
+  }
+  footer .site-info .footer .site-branding {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  footer .site-info .footer .contact {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+}
+
+@media (max-width: 386px) {
+  footer .site-info .footer {
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
