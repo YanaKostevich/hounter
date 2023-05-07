@@ -1130,7 +1130,6 @@ body a {
       -ms-flex-align: end;
           align-items: flex-end;
   position: absolute;
-  z-index: 11111;
   right: 20px;
   bottom: 0;
   gap: 10px;
