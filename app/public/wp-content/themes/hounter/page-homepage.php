@@ -1280,7 +1280,7 @@ get_header();
 						<li data-bs-target=".carousel-3" data-bs-slide-to="2" onclick="carouselSlide(2)"></li>
 					</ol>
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item active draggable" data-bs-target=".carousel-3" data-bs-slide-to="0">
 							<div class="col-md-3">
 								<div class="body_review_slider">
 									<section class="content_slider_img">
@@ -1319,7 +1319,7 @@ get_header();
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item draggable" data-bs-target=".carousel-3" data-bs-slide-to="1">
 							<div class="col-md-3">
 								<div class="body_review_slider">
 									<section class="content_slider_img">
@@ -1358,7 +1358,7 @@ get_header();
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item draggable" data-bs-target=".carousel-3" data-bs-slide-to="2">
 							<div class="col-md-3">
 								<div class="body_review_slider">
 									<section class="content_slider_img">

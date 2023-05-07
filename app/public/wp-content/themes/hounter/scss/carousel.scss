@@ -423,7 +423,12 @@
             width: 8px;
             border-radius: 100%;
         }
-
+        .carousel-wrapper {
+            display: inline-block;
+            margin-right: -4px; /* збільшуємо margin-right на 4px, щоб вирівняти елементи */
+            vertical-align: top; /* вирівнюємо елементи */
+          }
+          
         .carousel-item {
             // margin-right: 0px;
             float: left;
@@ -563,6 +568,7 @@
             // justify-content: flex-end;
         }
     }
+  
 }
 
 .carousel-inner .carousel-item > div:first-child {

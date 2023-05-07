@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
 h1 {
   font: normal 600 40px/50px "Lexend", sans-serif;
@@ -784,6 +785,14 @@ body a {
   height: 8px;
   width: 8px;
   border-radius: 100%;
+}
+
+.see_review .text-center.my-3 .carousel-wrapper {
+  display: inline-block;
+  margin-right: -4px;
+  /* збільшуємо margin-right на 4px, щоб вирівняти елементи */
+  vertical-align: top;
+  /* вирівнюємо елементи */
 }
 
 .see_review .text-center.my-3 .carousel-item {
