@@ -238,6 +238,7 @@
         }
         .recommendation {
             margin: 120px 0 120px 160px;
+            position: relative;
             @media (max-width: 768px) {
                 margin: 120px 0 120px 100px;
             }
@@ -245,16 +246,22 @@
                 margin: 100px 0 100px 50px;
             }
             .tabs_recommendation {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                flex-wrap: wrap;
+                // display: flex;
+                // justify-content: space-between;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: 1.5fr 3fr 0.5fr;
+                position: relative;
                 margin-right: 120px;
                 margin-bottom: 40px;
                 gap: 50px;
 
                 @media (max-width: 1281px) {
                     gap: 30px;
+                }
+                @media (max-width: 1200px) {
+                    grid-template-columns: 1fr;
                 }
                 @media (max-width: 768px) {
                     margin-right: 100px;
@@ -348,54 +355,15 @@
                         }
                     }
                 }
-                .navigation {
-                    position: relative;
-                    width: 13.5%;
-                    display: flex;
-                    justify-content: space-between;
-                    @media (max-width: 1350px) {
-                        width: 15%;
-                    }
-                    @media (max-width: 1234px) {
-                        width: 17%;
-                    }
-                    @media (max-width: 1215px) {
-                        width: 20%;
-                    }
-                    @media (max-width: 980px) {
-                        width: 25%;
-                    }
-                    @media (max-width: 860px) {
-                        width: 30%;
-                    }
-                    @media (max-width: 700px) {
-                        width: 35%;
-                    }
-                    @media (max-width: 500px) {
-                        width: 40%;
-                    }
-                    @media (max-width: 500px) {
-                        width: 45%;
-                    }
-                    @media (max-width: 408px) {
-                        width: 50%;
-                    }
-                    @media (max-width: 375px) {
-                        width: 55%;
-                    }
-                    @media (max-width: 355px) {
-                        width: 60%;
-                    }
-                    @media (max-width: 340px) {
-                        width: 65%;
-                    }
-                }
             }
             .tab-content {
-                position: relative;
+                // position: relative;
                 z-index: 1;
                 @media (max-width: 1281px) {
                     margin-top: 80px;
+                }
+                @media (max-width: 950px) {
+                    margin-top: 0;
                 }
             }
         }

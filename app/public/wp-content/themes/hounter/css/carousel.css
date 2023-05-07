@@ -496,49 +496,263 @@ body a {
   font: normal 300 14px/22px "Lexend", sans-serif;
 }
 
-.recommendation button.carousel-control-prev.active {
-  background: #10b981;
+.recommendation #house-tab-pane .navigation,
+.recommendation #villa-tab-pane .navigation,
+.recommendation #apartment-tab-pane .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 10%;
+  top: 5%;
+  right: 7%;
 }
 
-.recommendation button.carousel-control-prev.active .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+@media (max-width: 1350px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    width: 11%;
+  }
 }
 
-.recommendation button.carousel-control-next.active {
-  background: #10b981;
+@media (max-width: 1250px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    top: 4%;
+  }
 }
 
-.recommendation button.carousel-control-next.active .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+@media (max-width: 1200px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    top: 13%;
+    width: 13%;
+  }
 }
 
-.recommendation .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233C4563'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+@media (max-width: 1050px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    width: 15%;
+  }
 }
 
-.recommendation .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233C4563'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+@media (max-width: 950px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    width: 95%;
+    position: relative;
+    margin-bottom: 50px;
+    left: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
-.recommendation .carousel-control-next,
-.recommendation .carousel-control-prev {
+@media (max-width: 767px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    width: 83%;
+  }
+}
+
+@media (max-width: 604px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    width: 91%;
+  }
+}
+
+@media (max-width: 550px) {
+  .recommendation #house-tab-pane .navigation,
+  .recommendation #villa-tab-pane .navigation,
+  .recommendation #apartment-tab-pane .navigation {
+    width: 50%;
+  }
+}
+
+.recommendation #house-tab-pane .navigation .carousel-control-next1,
+.recommendation #house-tab-pane .navigation .carousel-control-prev1,
+.recommendation #house-tab-pane .navigation .carousel-control-next2,
+.recommendation #house-tab-pane .navigation .carousel-control-prev2,
+.recommendation #house-tab-pane .navigation .carousel-control-next3,
+.recommendation #house-tab-pane .navigation .carousel-control-prev3,
+.recommendation #villa-tab-pane .navigation .carousel-control-next1,
+.recommendation #villa-tab-pane .navigation .carousel-control-prev1,
+.recommendation #villa-tab-pane .navigation .carousel-control-next2,
+.recommendation #villa-tab-pane .navigation .carousel-control-prev2,
+.recommendation #villa-tab-pane .navigation .carousel-control-next3,
+.recommendation #villa-tab-pane .navigation .carousel-control-prev3,
+.recommendation #apartment-tab-pane .navigation .carousel-control-next1,
+.recommendation #apartment-tab-pane .navigation .carousel-control-prev1,
+.recommendation #apartment-tab-pane .navigation .carousel-control-next2,
+.recommendation #apartment-tab-pane .navigation .carousel-control-prev2,
+.recommendation #apartment-tab-pane .navigation .carousel-control-next3,
+.recommendation #apartment-tab-pane .navigation .carousel-control-prev3 {
   border-radius: 32px;
   background: #e0e3eb;
   opacity: 1;
   width: auto;
-  padding: 17.83px 25.33px 17.83px 26.5px;
+  padding: 7px 20px;
 }
 
-@media (max-width: 1234px) {
-  .recommendation .carousel-control-next,
-  .recommendation .carousel-control-prev {
-    padding: 25px 25.33px 25px 26.5px;
+@media (max-width: 950px) {
+  .recommendation #house-tab-pane .navigation .carousel-control-next1,
+  .recommendation #house-tab-pane .navigation .carousel-control-prev1,
+  .recommendation #house-tab-pane .navigation .carousel-control-next2,
+  .recommendation #house-tab-pane .navigation .carousel-control-prev2,
+  .recommendation #house-tab-pane .navigation .carousel-control-next3,
+  .recommendation #house-tab-pane .navigation .carousel-control-prev3,
+  .recommendation #villa-tab-pane .navigation .carousel-control-next1,
+  .recommendation #villa-tab-pane .navigation .carousel-control-prev1,
+  .recommendation #villa-tab-pane .navigation .carousel-control-next2,
+  .recommendation #villa-tab-pane .navigation .carousel-control-prev2,
+  .recommendation #villa-tab-pane .navigation .carousel-control-next3,
+  .recommendation #villa-tab-pane .navigation .carousel-control-prev3,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-next1,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-prev1,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-next2,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-prev2,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-next3,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-prev3 {
+    padding: 10px 40px;
   }
+}
+
+@media (max-width: 500px) {
+  .recommendation #house-tab-pane .navigation .carousel-control-next1,
+  .recommendation #house-tab-pane .navigation .carousel-control-prev1,
+  .recommendation #house-tab-pane .navigation .carousel-control-next2,
+  .recommendation #house-tab-pane .navigation .carousel-control-prev2,
+  .recommendation #house-tab-pane .navigation .carousel-control-next3,
+  .recommendation #house-tab-pane .navigation .carousel-control-prev3,
+  .recommendation #villa-tab-pane .navigation .carousel-control-next1,
+  .recommendation #villa-tab-pane .navigation .carousel-control-prev1,
+  .recommendation #villa-tab-pane .navigation .carousel-control-next2,
+  .recommendation #villa-tab-pane .navigation .carousel-control-prev2,
+  .recommendation #villa-tab-pane .navigation .carousel-control-next3,
+  .recommendation #villa-tab-pane .navigation .carousel-control-prev3,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-next1,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-prev1,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-next2,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-prev2,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-next3,
+  .recommendation #apartment-tab-pane .navigation .carousel-control-prev3 {
+    padding: 8px 20px;
+  }
+}
+
+.recommendation #house-tab-pane .navigation button,
+.recommendation #villa-tab-pane .navigation button,
+.recommendation #apartment-tab-pane .navigation button {
+  border: none;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-prev1.active,
+.recommendation #villa-tab-pane .navigation button.carousel-control-prev1.active,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-prev1.active {
+  background: #10b981;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-prev1.active .carousel-control-prev-icon,
+.recommendation #villa-tab-pane .navigation button.carousel-control-prev1.active .carousel-control-prev-icon,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-prev1.active .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-prev2.active,
+.recommendation #villa-tab-pane .navigation button.carousel-control-prev2.active,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-prev2.active {
+  background: #10b981;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-prev2.active .carousel-control-prev-icon,
+.recommendation #villa-tab-pane .navigation button.carousel-control-prev2.active .carousel-control-prev-icon,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-prev2.active .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-prev3.active,
+.recommendation #villa-tab-pane .navigation button.carousel-control-prev3.active,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-prev3.active {
+  background: #10b981;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-prev3.active .carousel-control-prev-icon,
+.recommendation #villa-tab-pane .navigation button.carousel-control-prev3.active .carousel-control-prev-icon,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-prev3.active .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-next1.active,
+.recommendation #villa-tab-pane .navigation button.carousel-control-next1.active,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-next1.active {
+  background: #10b981;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-next1.active .carousel-control-next-icon,
+.recommendation #villa-tab-pane .navigation button.carousel-control-next1.active .carousel-control-next-icon,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-next1.active .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-next2.active,
+.recommendation #villa-tab-pane .navigation button.carousel-control-next2.active,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-next2.active {
+  background: #10b981;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-next2.active .carousel-control-next-icon,
+.recommendation #villa-tab-pane .navigation button.carousel-control-next2.active .carousel-control-next-icon,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-next2.active .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-next3.active,
+.recommendation #villa-tab-pane .navigation button.carousel-control-next3.active,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-next3.active {
+  background: #10b981;
+}
+
+.recommendation #house-tab-pane .navigation button.carousel-control-next3.active .carousel-control-next-icon,
+.recommendation #villa-tab-pane .navigation button.carousel-control-next3.active .carousel-control-next-icon,
+.recommendation #apartment-tab-pane .navigation button.carousel-control-next3.active .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation .carousel-control-prev-icon,
+.recommendation #villa-tab-pane .navigation .carousel-control-prev-icon,
+.recommendation #apartment-tab-pane .navigation .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233C4563'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.recommendation #house-tab-pane .navigation .carousel-control-next-icon,
+.recommendation #villa-tab-pane .navigation .carousel-control-next-icon,
+.recommendation #apartment-tab-pane .navigation .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233C4563'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .recommendation .carousel-control-next-icon,
 .recommendation .carousel-control-prev-icon {
   width: 1rem;
+}
+
+@media (max-width: 950px) {
+  .recommendation .carousel-control-next-icon,
+  .recommendation .carousel-control-prev-icon {
+    width: 1.5rem;
+  }
 }
 
 .recommendation div#carouselExampleControls {

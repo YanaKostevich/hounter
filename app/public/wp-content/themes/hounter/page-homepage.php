@@ -177,22 +177,45 @@ get_header();
 					</li>
 				</ul>
 			</div>
-			<div class="navigation">
+			
+			<!-- <div class="navigation">
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				</button>
-			</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+			</div> -->
+
 		</div>
 
 
 		<div class="tab-content" id="myTabContent">
+		
 			<div class="tab-pane fade show active" id="house-tab-pane" role="tabpanel" aria-labelledby="house-tab" tabindex="0">
+			<div class="navigation">
+				<button class="carousel-control-prev1" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next1" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+				</div>
 				<div class="text-center my-4">
 					<div class="row mx-auto my-auto justify-content-center">
-						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="col-md-4">
@@ -426,9 +449,18 @@ get_header();
 				</div>
 			</div>
 			<div class="tab-pane fade" id="villa-tab-pane" role="tabpanel" aria-labelledby="villa-tab" tabindex="0">
+			<div class="navigation">
+				<button class="carousel-control-prev2" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next2" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+				</div>
 				<div class="text-center my-4">
+				
 					<div class="row mx-auto my-auto justify-content-center">
-						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="col-md-4">
@@ -662,9 +694,18 @@ get_header();
 				</div>
 			</div>
 			<div class="tab-pane fade" id="apartment-tab-pane" role="tabpanel" aria-labelledby="apartment-tab" tabindex="0">
-				<div class="text-center my-4">
+			<div class="navigation">
+				<button class="carousel-control-prev3" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next3" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+				</div>	
+			<div class="text-center my-4">
+				
 					<div class="row mx-auto my-auto justify-content-center">
-						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						<div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="col-md-4">
